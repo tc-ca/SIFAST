@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityMap>
+    <EntitySource>si_attribute</EntitySource>
+    <EntityTarget>si_serviceservicestandardfeeattribute</EntityTarget>
+    <AttributeMaps>
+      <AttributeMap>
+        <AttributeSource>si_name</AttributeSource>
+        <AttributeTarget>si_name</AttributeTarget>
+      </AttributeMap>
+    </AttributeMaps>
+  </EntityMap>
+</EntityMaps>

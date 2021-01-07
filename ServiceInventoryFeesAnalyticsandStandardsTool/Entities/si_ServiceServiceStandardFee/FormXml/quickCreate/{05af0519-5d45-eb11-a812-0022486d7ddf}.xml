@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{05af0519-5d45-eb11-a812-0022486d7ddf}</formid>
+    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{d9d1a955-bcd3-497d-bc56-eb6fa699531c}">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tab_1_column_1_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{94339834-91bf-47b7-8c88-ac442424a05a}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d09bfa64-293d-4a5e-93ac-2fbc0659ba92}" locklevel="0" labelid="{0c2bb144-bec3-4f2d-8603-4a10fa04be40}">
+                        <labels>
+                          <label description="Service" languagecode="1033" />
+                        </labels>
+                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fbf543f3-81c9-4204-b01a-505a8b5bcc02}" locklevel="0" labelid="{eb088018-6df7-4690-8101-c601750858f9}" showlabel="true">
+                        <labels>
+                          <label description="Service Standard" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicestandard" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicestandard" disabled="false" uniqueid="{1aa2a38c-34ec-6717-cc98-e0bae3da226b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{BEFBE92E-6588-436A-92F8-5855BD39DD3E}</DefaultViewId>
+                            <FilterRelationshipName>si_Service_si_ServiceStandard</FilterRelationshipName>
+                            <DependentAttributeName>si_serviceservicestandardfee.si_service</DependentAttributeName>
+                            <DependentAttributeType>si_service</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1c79de4-ba7a-4708-9efe-66020dcfecaa}" locklevel="0" labelid="{041e7856-86dd-4b1c-bf7a-b30d251d667a}">
+                        <labels>
+                          <label description="Fee" languagecode="1033" />
+                        </labels>
+                        <control id="si_fee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_fee" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{58632cd2-4e4c-4ead-881c-2f36f4d6fbfa}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{2cb7afac-d372-4fa7-8852-7968a1c41ce1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{57915052-e1ea-4a2b-a2b6-31216fe91237}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{298e9294-e4bf-4585-ac9b-054350c1d532}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions />
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description=" quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

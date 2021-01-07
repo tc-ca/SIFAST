@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2839a90d-c357-4bda-aa23-17c623e88852}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{a51d2e4d-e11f-4ba0-80ac-ea07cf441436}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{901c23cc-ab28-4471-ac5f-0f9ecde935e4}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{317adbbf-6f4f-4654-b16c-fe1c2dcda4af}" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{09668b9e-bf6a-4f88-88b7-38b2a08d2ab4}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d916c701-1278-4cf5-b804-fbb2c04ad027}" locklevel="0">
+                        <labels>
+                          <label description="English Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_regulationfeenoticeenm" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_regulationfeenoticeenm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ff263a9-2c5c-46c8-9658-25c213e5171a}" locklevel="0">
+                        <labels>
+                          <label description="French Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_regulationfeenoticefnm" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_regulationfeenoticefnm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17e3abef-db53-4344-91f7-dff5d2e6b8be}" locklevel="0">
+                        <labels>
+                          <label description="Fee Legislation" languagecode="1033" />
+                        </labels>
+                        <control id="si_feelegislation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feelegislation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{af7127bf-e5d0-43a0-a656-766b1d0bb3f3}" locklevel="0">
+                        <labels>
+                          <label description="Year Introduced" languagecode="1033" />
+                        </labels>
+                        <control id="si_yearintroduced" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="si_yearintroduced" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{65fbe27f-db90-4411-984a-e0292ecc962c}" locklevel="0">
+                        <labels>
+                          <label description="Year Last Amendment" languagecode="1033" />
+                        </labels>
+                        <control id="si_yearlastamendment" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="si_yearlastamendment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b6180a4f-9457-4cc0-8e41-1b9d346f8ea6}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b6a97807-fedf-43b9-a883-d0aa19fe5bdb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{58a249c2-bdbf-4e51-b2ad-22f108f484d2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9623bd62-ccd5-4266-af20-48d8903a70dd}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{1ec6afcd-5c3a-448a-b94d-98b12f063995}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{96ca9a88-395b-4109-8568-c514fc6550b1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5eaea08a-b3c4-447d-96f2-ca78d74966c2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{33078e2d-2b99-4b70-9b76-d7362ef6880d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

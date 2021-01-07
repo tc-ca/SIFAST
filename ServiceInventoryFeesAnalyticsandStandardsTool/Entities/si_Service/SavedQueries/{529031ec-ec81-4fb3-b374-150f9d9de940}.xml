@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{529031ec-ec81-4fb3-b374-150f9d9de940}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_nameen" select="1" icon="1" preview="1">
+        <row name="result" id="si_serviceid">
+          <cell name="si_id" width="50" />
+          <cell name="si_nameen" width="300" />
+          <cell name="si_accesstype" width="100" />
+          <cell name="si_businessline" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_service">
+          <attribute name="si_serviceid" />
+          <attribute name="si_nameen" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_id" />
+          <attribute name="si_accesstype" />
+          <attribute name="si_businessline" />
+          <order attribute="si_id" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Services" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

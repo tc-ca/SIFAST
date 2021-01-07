@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{b9ce3a94-3f11-4eb5-ac43-11199487ff5a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_paymenttypeid">
+          <cell name="si_paymenttypecode" width="100" />
+          <cell name="si_paymenttypeenm" width="100" />
+          <cell name="si_paymenttypefnm" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_paymenttype">
+          <attribute name="si_paymenttypeid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_paymenttypeenm" />
+          <attribute name="si_paymenttypefnm" />
+          <attribute name="si_paymenttypecode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Payment Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
