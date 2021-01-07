@@ -24,14 +24,16 @@ steps:
 - task: PowerPlatformPublishCustomizations@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'ROM Dev'
+    PowerPlatformSPN: 'SIFAST Dev'
 
 - task: PowerPlatformExportSolution@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'ROM Dev'
+    PowerPlatformSPN: 'SIFAST Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName).zip'
+    AsyncOperation: true
+    MaxAsyncWaitTime: '60'
     ExportRelationshipRoles: true
 
 - task: PowerPlatformUnpackSolution@0
