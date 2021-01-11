@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>si_SIFAST</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="62" schemaName="si_SIFAST" />
+    <AppModuleComponent type="1" schemaName="si_accesstype" />
+    <AppModuleComponent type="1" schemaName="si_businessline" />
+    <AppModuleComponent type="1" schemaName="si_clienttargetgroup" />
+    <AppModuleComponent type="1" schemaName="si_coreactivity" />
+    <AppModuleComponent type="1" schemaName="si_directorate" />
+    <AppModuleComponent type="1" schemaName="si_fee" />
+    <AppModuleComponent type="1" schemaName="si_feeadjustmentauthority" />
+    <AppModuleComponent type="1" schemaName="si_feeadjustmenttype" />
+    <AppModuleComponent type="1" schemaName="si_feeamount" />
+    <AppModuleComponent type="1" schemaName="si_feegroup" />
+    <AppModuleComponent type="1" schemaName="si_feelegislation" />
+    <AppModuleComponent type="1" schemaName="si_feereportinggroup" />
+    <AppModuleComponent type="1" schemaName="si_feesettingauthority" />
+    <AppModuleComponent type="1" schemaName="si_feetype" />
+    <AppModuleComponent type="1" schemaName="si_formula" />
+    <AppModuleComponent type="1" schemaName="si_hourratetype" />
+    <AppModuleComponent type="1" schemaName="si_lineobject" />
+    <AppModuleComponent type="1" schemaName="si_materialityapplication" />
+    <AppModuleComponent type="1" schemaName="si_paymenttype" />
+    <AppModuleComponent type="1" schemaName="product" />
+    <AppModuleComponent type="1" schemaName="si_program" />
+    <AppModuleComponent type="1" schemaName="si_regulationfeenotice" />
+    <AppModuleComponent type="1" schemaName="si_remissiontype" />
+    <AppModuleComponent type="1" schemaName="si_attribute" />
+    <AppModuleComponent type="1" schemaName="si_servicegroup" />
+    <AppModuleComponent type="1" schemaName="si_servicestandard" />
+    <AppModuleComponent type="1" schemaName="si_servicestandardchannel" />
+    <AppModuleComponent type="1" schemaName="si_servicestandardtemplate" />
+    <AppModuleComponent type="1" schemaName="si_servicestandardtype" />
+    <AppModuleComponent type="1" schemaName="si_servicestandardvaluetype" />
+    <AppModuleComponent type="1" schemaName="si_servicestandardwindow" />
+    <AppModuleComponent type="1" schemaName="si_servicetype" />
+    <AppModuleComponent type="1" schemaName="si_serviceservicestandardfee" />
+    <AppModuleComponent type="60" id="{05af0519-5d45-eb11-a812-0022486d7ddf}" />
+    <AppModuleComponent type="1" schemaName="si_serviceservicestandardfeeattribute" />
+    <AppModuleComponent type="1" schemaName="si_specialdesignation" />
+    <AppModuleComponent type="1" schemaName="si_service" />
+    <AppModuleComponent type="1" schemaName="si_unitbasis" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="SIFAST" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

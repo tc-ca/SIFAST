@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{6b9abf1f-52fe-469f-ad14-8eb2dc407c2e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_feeamountid">
+          <cell name="a_72011a1764bc4045adf0ad524bff97ba.si_feecode" width="100" />
+          <cell name="si_feeamount" width="100" />
+          <cell name="si_startdate" width="100" />
+          <cell name="si_enddate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_feeamount">
+          <attribute name="si_feeamountid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_startdate" />
+          <attribute name="si_enddate" />
+          <attribute name="si_feeamount" />
+          <link-entity alias="a_72011a1764bc4045adf0ad524bff97ba" name="si_fee" to="si_fee" from="si_feeid" link-type="outer" visible="false">
+            <attribute name="si_feecode" />
+          </link-entity>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Fee Amounts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

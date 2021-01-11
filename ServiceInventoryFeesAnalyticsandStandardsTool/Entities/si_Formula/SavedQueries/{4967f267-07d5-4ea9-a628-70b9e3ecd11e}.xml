@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{4967f267-07d5-4ea9-a628-70b9e3ecd11e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_formulaid">
+          <cell name="si_formulaenm" width="100" />
+          <cell name="si_formulafnm" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_formula">
+          <attribute name="si_formulaid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_formulaenm" />
+          <attribute name="si_formulafnm" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Formulas" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

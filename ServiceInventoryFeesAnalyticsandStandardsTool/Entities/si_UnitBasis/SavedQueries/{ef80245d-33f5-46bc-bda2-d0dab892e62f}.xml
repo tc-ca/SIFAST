@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{ef80245d-33f5-46bc-bda2-d0dab892e62f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_unitbasisid">
+          <cell name="si_unitbasiscode" width="100" />
+          <cell name="si_unitbasisenm" width="100" />
+          <cell name="si_unittypefnm" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_unitbasis">
+          <attribute name="si_unitbasisid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_unitbasiscode" />
+          <attribute name="si_unitbasisenm" />
+          <attribute name="si_unittypefnm" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Unit Bases" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

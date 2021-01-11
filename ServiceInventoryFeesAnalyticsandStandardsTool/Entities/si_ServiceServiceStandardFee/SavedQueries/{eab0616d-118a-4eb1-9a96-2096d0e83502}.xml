@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{eab0616d-118a-4eb1-9a96-2096d0e83502}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_serviceservicestandardfeeid">
+          <cell name="si_name" width="100" />
+          <cell name="si_service" width="100" />
+          <cell name="si_servicestandard" width="100" />
+          <cell name="si_fee" width="100" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_serviceservicestandardfee">
+          <attribute name="si_serviceservicestandardfeeid" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_service" />
+          <attribute name="si_servicestandard" />
+          <attribute name="si_fee" />
+          <attribute name="si_name" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Service-Service Standard-Fees" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

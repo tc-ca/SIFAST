@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5608ebeb-97b5-4e92-95e3-b74ae6e66765}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_feesettingauthorityid">
+          <cell name="si_regulationfeenoticeenm" width="100" />
+          <cell name="si_regulationfeenoticefnm" width="100" />
+          <cell name="si_feelegislation" width="100" />
+          <cell name="si_yearintroduced" width="100" />
+          <cell name="si_yearlastamendment" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_feesettingauthority">
+          <attribute name="si_feesettingauthorityid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_regulationfeenoticeenm" />
+          <attribute name="si_regulationfeenoticefnm" />
+          <attribute name="si_feelegislation" />
+          <attribute name="si_yearintroduced" />
+          <attribute name="si_yearlastamendment" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Fee Setting Authorities" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

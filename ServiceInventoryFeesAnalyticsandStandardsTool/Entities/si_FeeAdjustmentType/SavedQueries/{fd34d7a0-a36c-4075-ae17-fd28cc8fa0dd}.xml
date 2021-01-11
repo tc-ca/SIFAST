@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{fd34d7a0-a36c-4075-ae17-fd28cc8fa0dd}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_feeadjustmenttypeid">
+          <cell name="si_feeadjustmenttypecode" width="100" />
+          <cell name="si_adjustmenttypeenm" width="100" />
+          <cell name="si_adjustmenttypefnm" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_feeadjustmenttype">
+          <attribute name="si_feeadjustmenttypeid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_adjustmenttypeenm" />
+          <attribute name="si_adjustmenttypefnm" />
+          <attribute name="si_feeadjustmenttypecode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Fee Adjustment Types" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
