@@ -15,6 +15,7 @@ interface si_ServiceStandard_Base extends WebEntity {
 }
 interface si_ServiceStandard_Relationships {
   si_Template?: si_ServiceStandardTemplate_Result | null;
+  si_ValueType?: si_ServiceStandardValueType_Result | null;
 }
 interface si_ServiceStandard extends si_ServiceStandard_Base, si_ServiceStandard_Relationships {
   ownerid_bind$systemusers?: string | null;
@@ -87,6 +88,7 @@ interface si_ServiceStandard_Filter {
 }
 interface si_ServiceStandard_Expand {
   si_Template: WebExpand<si_ServiceStandard_Expand, si_ServiceStandardTemplate_Select, si_ServiceStandardTemplate_Filter, { si_Template: si_ServiceStandardTemplate_Result }>;
+  si_ValueType: WebExpand<si_ServiceStandard_Expand, si_ServiceStandardValueType_Select, si_ServiceStandardValueType_Filter, { si_ValueType: si_ServiceStandardValueType_Result }>;
 }
 interface si_ServiceStandard_FormattedResult {
   createdby_formatted?: string;
@@ -126,6 +128,7 @@ interface si_ServiceStandard_Result extends si_ServiceStandard_Base, si_ServiceS
 }
 interface si_ServiceStandard_RelatedOne {
   si_Template: WebMappingRetrieve<si_ServiceStandardTemplate_Select,si_ServiceStandardTemplate_Expand,si_ServiceStandardTemplate_Filter,si_ServiceStandardTemplate_Fixed,si_ServiceStandardTemplate_Result,si_ServiceStandardTemplate_FormattedResult>;
+  si_ValueType: WebMappingRetrieve<si_ServiceStandardValueType_Select,si_ServiceStandardValueType_Expand,si_ServiceStandardValueType_Filter,si_ServiceStandardValueType_Fixed,si_ServiceStandardValueType_Result,si_ServiceStandardValueType_FormattedResult>;
 }
 interface si_ServiceStandard_RelatedMany {
 }

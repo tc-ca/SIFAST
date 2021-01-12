@@ -78,6 +78,29 @@ interface si_ServiceStandardTemplate_Create extends si_ServiceStandardTemplate {
 }
 interface si_ServiceStandardTemplate_Update extends si_ServiceStandardTemplate {
 }
+interface si_ServiceStandardValueType_Base extends WebEntity {
+}
+interface si_ServiceStandardValueType_Fixed extends WebEntity_Fixed {
+  si_servicestandardvaluetypeid: string;
+}
+interface si_ServiceStandardValueType extends si_ServiceStandardValueType_Base, si_ServiceStandardValueType_Relationships {
+}
+interface si_ServiceStandardValueType_Relationships {
+}
+interface si_ServiceStandardValueType_Result extends si_ServiceStandardValueType_Base, si_ServiceStandardValueType_Relationships {
+}
+interface si_ServiceStandardValueType_FormattedResult {
+}
+interface si_ServiceStandardValueType_Select {
+}
+interface si_ServiceStandardValueType_Expand {
+}
+interface si_ServiceStandardValueType_Filter {
+}
+interface si_ServiceStandardValueType_Create extends si_ServiceStandardValueType {
+}
+interface si_ServiceStandardValueType_Update extends si_ServiceStandardValueType {
+}
 interface si_Fee_Base extends WebEntity {
 }
 interface si_Fee_Fixed extends WebEntity_Fixed {
