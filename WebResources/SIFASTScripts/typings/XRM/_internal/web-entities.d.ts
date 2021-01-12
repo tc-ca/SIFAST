@@ -9,6 +9,29 @@ interface WebEntity {
 interface WebEntity_Fixed {
   "@odata.etag": string;
 }
+interface si_FeeAmount_Base extends WebEntity {
+}
+interface si_FeeAmount_Fixed extends WebEntity_Fixed {
+  si_feeamountid: string;
+}
+interface si_FeeAmount extends si_FeeAmount_Base, si_FeeAmount_Relationships {
+}
+interface si_FeeAmount_Relationships {
+}
+interface si_FeeAmount_Result extends si_FeeAmount_Base, si_FeeAmount_Relationships {
+}
+interface si_FeeAmount_FormattedResult {
+}
+interface si_FeeAmount_Select {
+}
+interface si_FeeAmount_Expand {
+}
+interface si_FeeAmount_Filter {
+}
+interface si_FeeAmount_Create extends si_FeeAmount {
+}
+interface si_FeeAmount_Update extends si_FeeAmount {
+}
 interface si_ServiceStandard_Base extends WebEntity {
 }
 interface si_ServiceStandard_Fixed extends WebEntity_Fixed {
@@ -54,4 +77,27 @@ interface si_ServiceStandardTemplate_Filter {
 interface si_ServiceStandardTemplate_Create extends si_ServiceStandardTemplate {
 }
 interface si_ServiceStandardTemplate_Update extends si_ServiceStandardTemplate {
+}
+interface si_Fee_Base extends WebEntity {
+}
+interface si_Fee_Fixed extends WebEntity_Fixed {
+  si_feeid: string;
+}
+interface si_Fee extends si_Fee_Base, si_Fee_Relationships {
+}
+interface si_Fee_Relationships {
+}
+interface si_Fee_Result extends si_Fee_Base, si_Fee_Relationships {
+}
+interface si_Fee_FormattedResult {
+}
+interface si_Fee_Select {
+}
+interface si_Fee_Expand {
+}
+interface si_Fee_Filter {
+}
+interface si_Fee_Create extends si_Fee {
+}
+interface si_Fee_Update extends si_Fee {
 }

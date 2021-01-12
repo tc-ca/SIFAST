@@ -31,7 +31,6 @@ declare namespace Form.si_servicestandard.Main {
       get(name: "si_nameen"): Xrm.StringControl;
       get(name: "si_namefr"): Xrm.StringControl;
       get(name: "si_template"): Xrm.LookupControl<"si_servicestandardtemplate">;
-      get(name: "si_template1"): Xrm.LookupControl<"si_servicestandardtemplate">;
       get(name: "si_type"): Xrm.LookupControl<"si_servicestandardtype">;
       get(name: "si_value"): Xrm.NumberControl;
       get(name: "si_valuetype"): Xrm.LookupControl<"si_servicestandardvaluetype">;
@@ -66,7 +65,6 @@ declare namespace Form.si_servicestandard.Main {
     getControl(controlName: "si_nameen"): Xrm.StringControl;
     getControl(controlName: "si_namefr"): Xrm.StringControl;
     getControl(controlName: "si_template"): Xrm.LookupControl<"si_servicestandardtemplate">;
-    getControl(controlName: "si_template1"): Xrm.LookupControl<"si_servicestandardtemplate">;
     getControl(controlName: "si_type"): Xrm.LookupControl<"si_servicestandardtype">;
     getControl(controlName: "si_value"): Xrm.NumberControl;
     getControl(controlName: "si_valuetype"): Xrm.LookupControl<"si_servicestandardvaluetype">;
