@@ -10,7 +10,7 @@
     <layoutxml>
       <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
         <row name="result" id="si_lineobjectid">
-          <cell name="si_name" width="300" />
+          <cell name="si_name" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
@@ -20,9 +20,8 @@
       <fetch version="1.0" mapping="logical">
         <entity name="si_lineobject">
           <attribute name="si_lineobjectid" />
-          <attribute name="si_name" />
           <attribute name="createdon" />
-          <order attribute="si_name" descending="false" />
+          <attribute name="si_name" />
         </entity>
       </fetch>
     </fetchxml>

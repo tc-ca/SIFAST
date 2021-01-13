@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="si_feeadjustmenttype" localizedName="Fee Adjustment Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.9</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Fee Adjustment Type" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="157420000">
+      <labels>
+        <label description="CPI" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420001">
+      <labels>
+        <label description="Exempted" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420002">
+      <labels>
+        <label description="Periodic" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

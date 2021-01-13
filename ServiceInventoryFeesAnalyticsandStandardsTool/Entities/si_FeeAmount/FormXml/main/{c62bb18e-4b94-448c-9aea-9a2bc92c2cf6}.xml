@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{5008df93-ef66-4824-9300-7f3e4df474d5}" IsUserDefined="1">
           <labels>
@@ -60,35 +60,19 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{c64200ea-63d7-4bb1-b500-9617f5c6fa5f}" locklevel="0">
+                      <cell id="{8a0c57ac-2928-63a7-aa29-8a809234a021}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Fee Adjustment Authority" languagecode="1033" />
                         </labels>
-                        <control id="si_feeadjustmentauthority" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feeadjustmentauthority" disabled="false" />
+                        <control id="si_feeadjustmentauthority" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="si_feeadjustmentauthority" disabled="false" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a8932a84-b9a4-4654-bb0c-5f75ce00910a}" locklevel="0">
+                      <cell id="{e8652274-926b-70db-1135-1e45b6334d01}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Fee Adjustment Type" languagecode="1033" />
                         </labels>
-                        <control id="si_feeadjustmenttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feeadjustmenttype" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{9de1dc63-2267-4b7a-a8f7-13371d3d7c81}" locklevel="0">
-                        <labels>
-                          <label description="Fee Amount" languagecode="1033" />
-                        </labels>
-                        <control id="si_feeamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="si_feeamount" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{8a2335e7-616f-490a-b411-7a80f999f633}" locklevel="0">
-                        <labels>
-                          <label description="Fee Amount Rule" languagecode="1033" />
-                        </labels>
-                        <control id="si_feeamountrule" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feeamountrule" disabled="false" />
+                        <control id="si_feeadjustmenttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="si_feeadjustmenttype" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -100,11 +84,27 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{ad9ba51c-b02e-4ff6-a8ed-1b556e7c00b3}" locklevel="0">
+                      <cell id="{9de1dc63-2267-4b7a-a8f7-13371d3d7c81}" locklevel="0">
                         <labels>
-                          <label description="Other Fee Amount" languagecode="1033" />
+                          <label description="Fee Amount" languagecode="1033" />
                         </labels>
-                        <control id="si_otherfeeamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="si_otherfeeamount" disabled="false" />
+                        <control id="si_feeamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="si_feeamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7d970a9d-6642-8a4e-bc57-7ab77dabe976}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Fee Amount with Precision" languagecode="1033" />
+                        </labels>
+                        <control id="si_feeamountwithprecision" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_feeamountwithprecision" disabled="true" uniqueid="{597db2cc-adbc-a5b6-db3d-7179b572993e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a2335e7-616f-490a-b411-7a80f999f633}" locklevel="0">
+                        <labels>
+                          <label description="Fee Amount Rule" languagecode="1033" />
+                        </labels>
+                        <control id="si_feeamountrule" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feeamountrule" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -156,6 +156,52 @@
           </row>
         </rows>
       </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <formLibraries>
+        <Library name="si_scripts/feeamount.js" libraryUniqueId="{8a29d1e2-2d69-d1bd-1b55-ddd06a8882dd}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="si_feeamount">
+          <Handlers>
+            <Handler functionName="SIFAST.FeeAmount.SetFeeAmountWithPrecision" libraryName="si_scripts/feeamount.js" handlerUniqueId="{96290285-8103-ed58-eb25-c2773a7b0b48}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_feeprecision">
+          <Handlers>
+            <Handler functionName="SIFAST.FeeAmount.SetFeeAmountWithPrecision" libraryName="si_scripts/feeamount.js" handlerUniqueId="{e6bb0601-9717-0648-4662-83c5d8de680c}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

@@ -20,11 +20,11 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{317adbbf-6f4f-4654-b16c-fe1c2dcda4af}" visible="false">
+                      <cell id="{317adbbf-6f4f-4654-b16c-fe1c2dcda4af}" visible="true">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
-                        <control id="si_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_name" />
+                        <control id="si_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_name" disabled="true" />
                       </cell>
                     </row>
                     <row>
@@ -38,7 +38,7 @@
                     <row>
                       <cell id="{d916c701-1278-4cf5-b804-fbb2c04ad027}" locklevel="0">
                         <labels>
-                          <label description="English Name" languagecode="1033" />
+                          <label description="Name of the Regulation or Fee Notice" languagecode="1033" />
                         </labels>
                         <control id="si_regulationfeenoticeenm" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_regulationfeenoticeenm" disabled="false" />
                       </cell>
@@ -46,7 +46,7 @@
                     <row>
                       <cell id="{4ff263a9-2c5c-46c8-9658-25c213e5171a}" locklevel="0">
                         <labels>
-                          <label description="French Name" languagecode="1033" />
+                          <label description="Nom de la règlementaiton ou de l'avis de frais" languagecode="1033" />
                         </labels>
                         <control id="si_regulationfeenoticefnm" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_regulationfeenoticefnm" disabled="false" />
                       </cell>

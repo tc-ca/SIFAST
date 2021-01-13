@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{3ee1ffa1-b160-4e97-b24b-9d2580c68b60}" IsUserDefined="1" name="tabServices">
           <labels>
@@ -19,23 +19,6 @@
                     <label description="General" languagecode="1033" />
                   </labels>
                   <rows>
-                    <row>
-                      <cell id="{5c5d7a3c-4734-8881-7d5c-b0777b86b905}" showlabel="true" locklevel="0" visible="false">
-                        <labels>
-                          <label description="Template" languagecode="1033" />
-                        </labels>
-                        <control id="si_template" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_template" disabled="false" uniqueid="{24306c7e-da21-34e5-755b-1adcaadeb2b4}">
-                          <parameters>
-                            <AutoResolve>true</AutoResolve>
-                            <DisableMru>false</DisableMru>
-                            <DisableQuickFind>false</DisableQuickFind>
-                            <DisableViewPicker>false</DisableViewPicker>
-                            <DefaultViewId>{69D1EFFF-4B0B-4736-B2B2-82AF7B869D76}</DefaultViewId>
-                            <AllowFilterOff>false</AllowFilterOff>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
                     <row>
                       <cell id="{4ecb1d97-bb38-4c6b-8301-c450a0e981aa}" locklevel="0">
                         <labels>
@@ -209,6 +192,27 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="si_scripts/serviceStandard.js" libraryUniqueId="{a8dc9682-86d2-d199-2617-3699c00233b0}" />
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{481a1e3e-7adc-8901-69b3-0b4c97840598}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="si_template">
+          <Handlers>
+            <Handler functionName="SIFAST.ServiceStandard.SetNames" libraryName="si_scripts/serviceStandard.js" handlerUniqueId="{960ac66d-3d15-34ca-3638-77ecd65841e2}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_value">
+          <Handlers>
+            <Handler functionName="SIFAST.ServiceStandard.SetNames" libraryName="si_scripts/serviceStandard.js" handlerUniqueId="{ab5354a0-e2ca-26da-b16a-849e79c386e3}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_valuetype">
+          <Handlers>
+            <Handler functionName="SIFAST.ServiceStandard.SetNames" libraryName="si_scripts/serviceStandard.js" handlerUniqueId="{0d821e1b-eb30-aeee-969b-7ee985d0c24c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

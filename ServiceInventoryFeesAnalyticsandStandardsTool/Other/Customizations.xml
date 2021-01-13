@@ -12,6 +12,7 @@
   <optionsets />
   <Dashboards />
   <InteractionCentricDashboards />
+  <WebResources />
   <CustomControls />
   <AppModules />
   <EntityDataProviders />

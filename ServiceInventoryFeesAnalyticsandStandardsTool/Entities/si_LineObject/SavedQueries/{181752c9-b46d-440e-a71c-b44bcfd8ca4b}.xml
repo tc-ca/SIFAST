@@ -10,8 +10,7 @@
     <layoutxml>
       <grid name="si_lineobjects" jump="si_name" select="1" icon="1" preview="0">
         <row name="si_lineobject" id="si_lineobjectid">
-          <cell name="si_name" width="300" />
-          <cell name="createdon" width="125" />
+          <cell name="si_name" width="178" />
         </row>
       </grid>
     </layoutxml>
@@ -20,11 +19,10 @@
       <fetch version="1.0" mapping="logical">
         <entity name="si_lineobject">
           <attribute name="si_lineobjectid" />
-          <attribute name="si_name" />
-          <attribute name="createdon" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="si_name" />
         </entity>
       </fetch>
     </fetchxml>

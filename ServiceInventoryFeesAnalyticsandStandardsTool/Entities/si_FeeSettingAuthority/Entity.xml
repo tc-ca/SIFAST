@@ -636,7 +636,7 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="English Name" languagecode="1033" />
+            <displayname description="Name of the Regulation or Fee Notice" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -676,7 +676,7 @@
           <MaxLength>100</MaxLength>
           <Length>200</Length>
           <displaynames>
-            <displayname description="French Name" languagecode="1033" />
+            <displayname description="Nom de la règlementaiton ou de l'avis de frais" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
