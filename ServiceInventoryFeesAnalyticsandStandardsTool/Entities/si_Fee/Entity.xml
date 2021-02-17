@@ -1038,17 +1038,16 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="si_FeeType">
-          <Type>picklist</Type>
+          <Type>lookup</Type>
           <Name>si_feetype</Name>
           <LogicalName>si_feetype</LogicalName>
           <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsAuditEnabled>0</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.9</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -1067,8 +1066,8 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>-1</AppDefaultValue>
-          <OptionSetName>si_feetype</OptionSetName>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
           <displaynames>
             <displayname description="Fee Type" languagecode="1033" />
           </displaynames>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.20122.135" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.21021.133" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>ServiceInventoryFeesAnalyticsandStandardsTool</UniqueName>
     <LocalizedNames>
@@ -92,6 +92,7 @@
       <RootComponent type="1" schemaName="si_feelegislation" behavior="0" />
       <RootComponent type="1" schemaName="si_feereportinggroup" behavior="0" />
       <RootComponent type="1" schemaName="si_feesettingauthority" behavior="0" />
+      <RootComponent type="1" schemaName="si_feetype" behavior="0" />
       <RootComponent type="1" schemaName="si_formula" behavior="0" />
       <RootComponent type="1" schemaName="si_hourratetype" behavior="0" />
       <RootComponent type="1" schemaName="si_lineobject" behavior="0" />
@@ -117,19 +118,25 @@
       <RootComponent type="9" schemaName="si_feeadjustmentauthority" behavior="0" />
       <RootComponent type="9" schemaName="si_feeadjustmenttype" behavior="0" />
       <RootComponent type="9" schemaName="si_feedbackonlevelofsatisfaction" behavior="0" />
-      <RootComponent type="9" schemaName="si_feetype" behavior="0" />
       <RootComponent type="9" schemaName="si_materialityapplication" behavior="0" />
       <RootComponent type="9" schemaName="si_remissiontype" behavior="0" />
       <RootComponent type="9" schemaName="si_servicestatus" behavior="0" />
+      <RootComponent type="29" id="{07ed4a7f-6d70-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="29" id="{16984933-eb51-eb11-a812-0022486d7737}" behavior="0" />
+      <RootComponent type="29" id="{237c7826-6e70-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="29" id="{4eebe3f4-e151-eb11-a812-0022486d7737}" behavior="0" />
       <RootComponent type="29" id="{64ef5f63-4a33-eb11-a813-0022486d7ddf}" behavior="0" />
       <RootComponent type="29" id="{79de973e-c03f-eb11-a813-0022486d7ddf}" behavior="0" />
+      <RootComponent type="29" id="{81a3a3f6-6c70-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="29" id="{827623f6-c13f-eb11-a813-0022486d7ddf}" behavior="0" />
       <RootComponent type="29" id="{87b507c4-1a5a-4c54-a896-6873c031ee26}" behavior="0" />
       <RootComponent type="29" id="{8d94365b-eb30-eb11-a813-0022486d7ddf}" behavior="0" />
       <RootComponent type="29" id="{9ae019e7-e651-eb11-a812-0022486d7737}" behavior="0" />
       <RootComponent type="29" id="{9d10e376-9ef7-4b53-a3db-d742b057a37a}" behavior="0" />
+      <RootComponent type="29" id="{9dd1aad8-6d70-eb11-a812-000d3af4a7cb}" behavior="0" />
+      <RootComponent type="29" id="{a322963d-6d70-eb11-a812-000d3af4a7cb}" behavior="0" />
+      <RootComponent type="29" id="{d3a2058a-6c70-eb11-a812-000d3af4a7cb}" behavior="0" />
+      <RootComponent type="29" id="{d76ddfb7-7070-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="60" id="{0060dba3-1e2f-436a-81ab-6a3a93d66e60}" behavior="0" />
       <RootComponent type="60" id="{05af0519-5d45-eb11-a812-0022486d7ddf}" behavior="0" />
       <RootComponent type="60" id="{11ca6b34-bd76-4756-a1c0-b60862867ada}" behavior="0" />
@@ -137,6 +144,7 @@
       <RootComponent type="60" id="{23a27a83-6997-4489-867c-b67fe2308c71}" behavior="0" />
       <RootComponent type="60" id="{2839a90d-c357-4bda-aa23-17c623e88852}" behavior="0" />
       <RootComponent type="60" id="{345a691f-191d-4012-8ebf-27250ab52a73}" behavior="0" />
+      <RootComponent type="60" id="{36c3fbc7-6770-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="60" id="{3881f1a3-5042-41a3-8e81-14a064d3b7f2}" behavior="0" />
       <RootComponent type="60" id="{40edeebd-e519-4871-9f4d-852c3392ad09}" behavior="0" />
       <RootComponent type="60" id="{421a801b-20c4-4073-a1ef-984d28d5e99b}" behavior="0" />
@@ -146,9 +154,12 @@
       <RootComponent type="60" id="{5a4a924a-5752-4e5b-b959-1cf52a948a89}" behavior="0" />
       <RootComponent type="60" id="{6c91dad5-2429-eb11-a813-0022486d7ddf}" behavior="0" />
       <RootComponent type="60" id="{76626232-762e-46f8-94c0-fd1ec2355bb7}" behavior="0" />
+      <RootComponent type="60" id="{78986e8d-5889-4ac9-b864-e6eed97f5169}" behavior="0" />
       <RootComponent type="60" id="{7db609fe-a2b1-4410-8651-24723654e9e3}" behavior="0" />
+      <RootComponent type="60" id="{811f2c3a-6670-eb11-a812-000d3af4afba}" behavior="0" />
       <RootComponent type="60" id="{84df84ff-0626-4fec-9167-538762dd3df1}" behavior="0" />
       <RootComponent type="60" id="{89064e3a-5069-437a-9cf2-ad7ba7966fff}" behavior="0" />
+      <RootComponent type="60" id="{89f5a1f7-6770-eb11-a812-000d3af4afba}" behavior="0" />
       <RootComponent type="60" id="{8a71bb7a-f9c0-4ba7-85d5-4909e7516d5f}" behavior="0" />
       <RootComponent type="60" id="{90df6d17-9f0d-4e41-90f5-7bc2e42b120c}" behavior="0" />
       <RootComponent type="60" id="{a36cf55a-b790-48b2-b15c-04b627444139}" behavior="0" />
@@ -157,6 +168,7 @@
       <RootComponent type="60" id="{ab025e58-70a7-4ad4-a91c-43103bbe46f5}" behavior="0" />
       <RootComponent type="60" id="{ac1743d1-7b58-4fff-96be-409eacfaae91}" behavior="0" />
       <RootComponent type="60" id="{b4b6f0f8-d392-44e9-8dba-2432f9aaee88}" behavior="0" />
+      <RootComponent type="60" id="{b697db81-6670-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="60" id="{b9e75205-2554-eb11-a812-000d3af4b4ec}" behavior="0" />
       <RootComponent type="60" id="{c3411e5b-f112-4fc1-b1b2-918d83412a4d}" behavior="0" />
       <RootComponent type="60" id="{c62bb18e-4b94-448c-9aea-9a2bc92c2cf6}" behavior="0" />
@@ -166,6 +178,7 @@
       <RootComponent type="60" id="{ea100256-a11c-407d-8cb3-60c524aa18f5}" behavior="0" />
       <RootComponent type="60" id="{ee34e382-56cf-4868-8b61-ea97b3f0ea6c}" behavior="0" />
       <RootComponent type="60" id="{f50fbfc5-ea68-489c-8bc9-c27da8c58178}" behavior="0" />
+      <RootComponent type="60" id="{fb0132d5-7070-eb11-a812-000d3af4afba}" behavior="0" />
       <RootComponent type="60" id="{fbb53926-71cc-49bf-ab6a-cdac9ca3ed0e}" behavior="0" />
       <RootComponent type="60" id="{fd19fb52-0151-eb11-a812-0022486d7ddf}" behavior="0" />
       <RootComponent type="60" id="{fe295600-2429-eb11-a813-0022486d7ddf}" behavior="0" />
@@ -190,24 +203,32 @@
         <Dependent key="1" type="80" schemaName="si_SIFAST" displayName="SIFAST" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="4" type="66" schemaName="MscrmControls.InputMask.InputMaskControl" displayName="MscrmControls.InputMask.InputMaskControl" solution="CustomControlsCore (9.2.20122.00135)" />
-        <Dependent key="5" type="60" displayName="Information" parentDisplayName="Fee" id="{90df6d17-9f0d-4e41-90f5-7bc2e42b120c}" />
+        <Required key="4" type="66" schemaName="MscrmControls.OptionSet.OptionSetControl" displayName="MscrmControls.OptionSet.OptionSetControl" solution="CustomControlsCore (9.2.21021.00133)" />
+        <Dependent key="5" type="60" displayName="Information" parentDisplayName="TC Service" id="{c3411e5b-f112-4fc1-b1b2-918d83412a4d}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2012.2014)" />
+        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2102.1015)" />
+        <Dependent key="5" type="60" displayName="Information" parentDisplayName="TC Service" id="{c3411e5b-f112-4fc1-b1b2-918d83412a4d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="4" type="66" schemaName="MscrmControls.OptionSet.OptionSetControl" displayName="MscrmControls.OptionSet.OptionSetControl" solution="CustomControlsCore (9.2.21021.00133)" />
         <Dependent key="7" type="60" displayName="Information" parentDisplayName="Service Group" id="{23a27a83-6997-4489-867c-b67fe2308c71}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="66" schemaName="MscrmControls.OptionSet.OptionSetControl" displayName="MscrmControls.OptionSet.OptionSetControl" solution="CustomControlsCore (9.2.20122.00135)" />
+        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2102.1015)" />
         <Dependent key="7" type="60" displayName="Information" parentDisplayName="Service Group" id="{23a27a83-6997-4489-867c-b67fe2308c71}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2012.2014)" />
-        <Dependent key="9" type="60" displayName="Information" parentDisplayName="TC Service" id="{c3411e5b-f112-4fc1-b1b2-918d83412a4d}" />
+        <Required key="8" type="66" schemaName="MscrmControls.InputMask.InputMaskControl" displayName="MscrmControls.InputMask.InputMaskControl" solution="CustomControlsCore (9.2.21021.00133)" />
+        <Dependent key="9" type="60" displayName="Information" parentDisplayName="Fee" id="{90df6d17-9f0d-4e41-90f5-7bc2e42b120c}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="8" type="66" schemaName="MscrmControls.OptionSet.OptionSetControl" displayName="MscrmControls.OptionSet.OptionSetControl" solution="CustomControlsCore (9.2.20122.00135)" />
-        <Dependent key="9" type="60" displayName="Information" parentDisplayName="TC Service" id="{c3411e5b-f112-4fc1-b1b2-918d83412a4d}" />
+        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2102.1015)" />
+        <Dependent key="10" type="60" displayName="Information" parentDisplayName="Fee Type" id="{78986e8d-5889-4ac9-b864-e6eed97f5169}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="6" type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2102.1015)" />
+        <Dependent key="11" type="60" displayName=" quick create form" parentDisplayName="Fee Type" id="{fb0132d5-7070-eb11-a812-000d3af4afba}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

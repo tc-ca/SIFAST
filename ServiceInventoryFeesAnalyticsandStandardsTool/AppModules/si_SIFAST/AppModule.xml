@@ -24,6 +24,7 @@
     <AppModuleComponent type="1" schemaName="si_feelegislation" />
     <AppModuleComponent type="1" schemaName="si_feereportinggroup" />
     <AppModuleComponent type="1" schemaName="si_feesettingauthority" />
+    <AppModuleComponent type="1" schemaName="si_feetype" />
     <AppModuleComponent type="1" schemaName="si_formula" />
     <AppModuleComponent type="1" schemaName="si_hourratetype" />
     <AppModuleComponent type="1" schemaName="si_lineobject" />

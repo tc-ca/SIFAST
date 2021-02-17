@@ -209,7 +209,7 @@
         </event>
         <event name="onchange" application="false" active="false" attribute="si_valuetype">
           <Handlers>
-            <Handler functionName="SIFAST.ServiceStandard.SetNames" libraryName="si_scripts/serviceStandard.js" handlerUniqueId="{0d821e1b-eb30-aeee-969b-7ee985d0c24c}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="SIFAST.ServiceStandard.SetNames" libraryName="si_scripts/serviceStandard.js" handlerUniqueId="{0d821e1b-eb30-aeee-969b-7ee985d0c24c}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
       </events>

@@ -28,11 +28,19 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3bf79858-f426-4b43-8dea-58e759218d40}" locklevel="0">
+                      <cell id="{3bf79858-f426-4b43-8dea-58e759218d40}" locklevel="1">
                         <labels>
                           <label description="Fee Code" languagecode="1033" />
                         </labels>
-                        <control id="si_feecode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feecode" disabled="false" />
+                        <control id="si_feecode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feecode" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b63d3718-eb98-4fef-8343-2a453a88bd5e}" locklevel="0">
+                        <labels>
+                          <label description="Default Program" languagecode="1033" />
+                        </labels>
+                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -60,11 +68,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b0b86e03-4dc0-444e-a9ab-c811c9510987}" locklevel="0">
+                      <cell id="{bf11d81f-2955-49da-a6c3-8e08075b9dea}" locklevel="0">
                         <labels>
                           <label description="Fee Type" languagecode="1033" />
                         </labels>
-                        <control id="si_feetype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_feetype" disabled="false" />
+                        <control id="si_feetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feetype" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -172,14 +180,6 @@
                           <label description="Default Responsibility Code" languagecode="1033" />
                         </labels>
                         <control id="si_defaultresponsibilitycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_defaultresponsibilitycode" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{b63d3718-eb98-4fef-8343-2a453a88bd5e}" locklevel="0">
-                        <labels>
-                          <label description="Default Program" languagecode="1033" />
-                        </labels>
-                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -329,7 +329,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>

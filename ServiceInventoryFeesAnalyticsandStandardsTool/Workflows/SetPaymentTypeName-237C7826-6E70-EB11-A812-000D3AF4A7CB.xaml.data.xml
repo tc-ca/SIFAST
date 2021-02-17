@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Workflow WorkflowId="{4eebe3f4-e151-eb11-a812-0022486d7737}" Name="Set Fee Code Required" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <XamlFileName>/Workflows/SetFeeCodeRequired-4EEBE3F4-E151-EB11-A812-0022486D7737.xaml</XamlFileName>
+<Workflow WorkflowId="{237c7826-6e70-eb11-a812-000d3af4a7cb}" Name="Set Payment Type Name" Description="Click to add description" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/SetPaymentTypeName-237C7826-6E70-EB11-A812-000D3AF4A7CB.xaml</XamlFileName>
   <Type>1</Type>
   <Subprocess>0</Subprocess>
   <Category>2</Category>
@@ -11,8 +11,8 @@
   <TriggerOnDelete>0</TriggerOnDelete>
   <AsyncAutodelete>0</AsyncAutodelete>
   <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-  <StateCode>0</StateCode>
-  <StatusCode>1</StatusCode>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
   <RunAs>1</RunAs>
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>1.0.0.9</IntroducedVersion>
@@ -20,9 +20,9 @@
   <BusinessProcessType>0</BusinessProcessType>
   <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
   <ProcessTriggerScope>2</ProcessTriggerScope>
-  <PrimaryEntity>si_Fee</PrimaryEntity>
+  <PrimaryEntity>si_PaymentType</PrimaryEntity>
   <LocalizedNames>
-    <LocalizedName languagecode="1033" description="Set Fee Code Required" />
+    <LocalizedName languagecode="1033" description="Set Payment Type Name" />
   </LocalizedNames>
   <Descriptions>
     <Description languagecode="1033" description="Click to add description" />

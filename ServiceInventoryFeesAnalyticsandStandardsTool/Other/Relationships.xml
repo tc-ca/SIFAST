@@ -14,6 +14,7 @@
   <EntityRelationship Name="business_unit_si_feelegislation" />
   <EntityRelationship Name="business_unit_si_feereportinggroup" />
   <EntityRelationship Name="business_unit_si_feesettingauthority" />
+  <EntityRelationship Name="business_unit_si_feetype" />
   <EntityRelationship Name="business_unit_si_formula" />
   <EntityRelationship Name="business_unit_si_hourratetype" />
   <EntityRelationship Name="business_unit_si_lineobject" />
@@ -62,6 +63,8 @@
   <EntityRelationship Name="lk_si_feereportinggroup_modifiedby" />
   <EntityRelationship Name="lk_si_feesettingauthority_createdby" />
   <EntityRelationship Name="lk_si_feesettingauthority_modifiedby" />
+  <EntityRelationship Name="lk_si_feetype_createdby" />
+  <EntityRelationship Name="lk_si_feetype_modifiedby" />
   <EntityRelationship Name="lk_si_formula_createdby" />
   <EntityRelationship Name="lk_si_formula_modifiedby" />
   <EntityRelationship Name="lk_si_hourratetype_createdby" />
@@ -116,6 +119,7 @@
   <EntityRelationship Name="owner_si_feelegislation" />
   <EntityRelationship Name="owner_si_feereportinggroup" />
   <EntityRelationship Name="owner_si_feesettingauthority" />
+  <EntityRelationship Name="owner_si_feetype" />
   <EntityRelationship Name="owner_si_formula" />
   <EntityRelationship Name="owner_si_hourratetype" />
   <EntityRelationship Name="owner_si_lineobject" />
@@ -140,6 +144,7 @@
   <EntityRelationship Name="si_Fee_FeeGroup_si_FeeGroup" />
   <EntityRelationship Name="si_Fee_FeeReportingGroup_si_FeeReportingG" />
   <EntityRelationship Name="si_Fee_FeeSettingAuthority_si_FeeSettingA" />
+  <EntityRelationship Name="si_Fee_FeeType_si_FeeType" />
   <EntityRelationship Name="si_Fee_Formula_si_Formula" />
   <EntityRelationship Name="si_Fee_HourRateType_si_HourRateType" />
   <EntityRelationship Name="si_Fee_LineObject_si_LineObject" />
@@ -190,6 +195,7 @@
   <EntityRelationship Name="team_si_feelegislation" />
   <EntityRelationship Name="team_si_feereportinggroup" />
   <EntityRelationship Name="team_si_feesettingauthority" />
+  <EntityRelationship Name="team_si_feetype" />
   <EntityRelationship Name="team_si_formula" />
   <EntityRelationship Name="team_si_hourratetype" />
   <EntityRelationship Name="team_si_lineobject" />
@@ -224,6 +230,7 @@
   <EntityRelationship Name="user_si_feelegislation" />
   <EntityRelationship Name="user_si_feereportinggroup" />
   <EntityRelationship Name="user_si_feesettingauthority" />
+  <EntityRelationship Name="user_si_feetype" />
   <EntityRelationship Name="user_si_formula" />
   <EntityRelationship Name="user_si_hourratetype" />
   <EntityRelationship Name="user_si_lineobject" />
