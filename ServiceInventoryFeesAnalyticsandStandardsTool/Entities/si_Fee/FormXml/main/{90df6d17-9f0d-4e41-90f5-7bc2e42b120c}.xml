@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{4ddd7595-a7ee-42a2-9bab-e62991542132}" IsUserDefined="1">
           <labels>
@@ -36,14 +36,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b63d3718-eb98-4fef-8343-2a453a88bd5e}" locklevel="0">
-                        <labels>
-                          <label description="Default Program" languagecode="1033" />
-                        </labels>
-                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{c723647e-a832-4b55-9fc0-d13510cbb0f1}">
                         <labels>
                           <label description="English Display Name" languagecode="1033" />
@@ -60,11 +52,31 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{839eb6d4-9252-46ca-a108-5a8e4297b19e}" locklevel="0">
+                      <cell id="{b63d3718-eb98-4fef-8343-2a453a88bd5e}" locklevel="0">
+                        <labels>
+                          <label description="Default Program" languagecode="1033" />
+                        </labels>
+                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{839eb6d4-9252-46ca-a108-5a8e4297b19e}" locklevel="0" showlabel="true">
                         <labels>
                           <label description="Fee Group" languagecode="1033" />
                         </labels>
-                        <control id="si_feegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feegroup" disabled="false" />
+                        <control id="si_feegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feegroup" disabled="false" uniqueid="{0c56ee53-1bdc-b0e8-e788-c0356ccad442}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E56E89C4-EA0D-4FB3-987C-35A3A03F3584}</DefaultViewId>
+                            <FilterRelationshipName>si_FeeGroup_Program_si_Program</FilterRelationshipName>
+                            <DependentAttributeName>si_fee.si_defaultprogram</DependentAttributeName>
+                            <DependentAttributeType>si_program</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -329,7 +341,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar />
+        <NavBar></NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -410,6 +422,22 @@
           </customControl>
         </controlDescription>
       </controlDescriptions>
+      <formLibraries>
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{8784cc21-44d8-5807-56a2-ce010b437c3c}" />
+        <Library name="si_scripts/fee.js" libraryUniqueId="{523bb17a-ad03-b8b9-a857-3711b33d1e46}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="si_feegroup">
+          <Handlers>
+            <Handler functionName="SIFAST.Fee.ValidateFeeGroup" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{803bdd74-e25b-2183-0486-c17aeaa8375a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_defaultprogram">
+          <Handlers>
+            <Handler functionName="SIFAST.Fee.ValidateFeeGroup" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{612beb6b-7ecb-4309-7962-66c7a32d9284}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

@@ -132,6 +132,7 @@
       <RootComponent type="29" id="{87b507c4-1a5a-4c54-a896-6873c031ee26}" behavior="0" />
       <RootComponent type="29" id="{8d94365b-eb30-eb11-a813-0022486d7ddf}" behavior="0" />
       <RootComponent type="29" id="{9ae019e7-e651-eb11-a812-0022486d7737}" behavior="0" />
+      <RootComponent type="29" id="{9b224daa-5a71-eb11-a812-000d3af4afba}" behavior="0" />
       <RootComponent type="29" id="{9d10e376-9ef7-4b53-a3db-d742b057a37a}" behavior="0" />
       <RootComponent type="29" id="{9dd1aad8-6d70-eb11-a812-000d3af4a7cb}" behavior="0" />
       <RootComponent type="29" id="{a322963d-6d70-eb11-a812-000d3af4a7cb}" behavior="0" />
@@ -185,6 +186,7 @@
       <RootComponent type="60" id="{fedf4e21-2c92-431a-82cd-85f1e1bf514f}" behavior="0" />
       <RootComponent type="61" schemaName="si_feeAmount.js" behavior="0" />
       <RootComponent type="61" schemaName="si_lib/dg.xrmquery.web.js" behavior="0" />
+      <RootComponent type="61" schemaName="si_scripts/fee.js" behavior="0" />
       <RootComponent type="61" schemaName="si_scripts/feeamount.js" behavior="0" />
       <RootComponent type="61" schemaName="si_scripts/serviceStandard.js" behavior="0" />
       <RootComponent type="80" schemaName="si_SIFAST" behavior="0" />

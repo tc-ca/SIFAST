@@ -153,6 +153,7 @@
   <EntityRelationship Name="si_Fee_UnitBasis_si_UnitBasis" />
   <EntityRelationship Name="si_Fee_UnitType_si_UnitType" />
   <EntityRelationship Name="si_FeeAmount_Fee_si_Fee" />
+  <EntityRelationship Name="si_FeeGroup_Program_si_Program" />
   <EntityRelationship Name="si_FeeSettingAuthority_FeeLegislation_si_" />
   <EntityRelationship Name="si_Service_AccessType_si_AccessType" />
   <EntityRelationship Name="si_Service_AccessType_si_AccessType_si_servicegroup" />
