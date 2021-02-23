@@ -1,14 +1,12 @@
-declare namespace Form.si_fee.Quick {
+declare namespace Form.si_service.Quick {
   namespace Information {
     namespace Tabs {
     }
     interface Attributes extends Xrm.AttributeCollectionBase {
       get(name: "ownerid"): Xrm.LookupAttribute<"systemuser" | "team">;
-      get(name: "si_displaynameen"): Xrm.Attribute<string>;
-      get(name: "si_displaynamefr"): Xrm.Attribute<string>;
-      get(name: "si_feecode"): Xrm.Attribute<string>;
-      get(name: "si_feegroup"): Xrm.LookupAttribute<"si_feegroup">;
-      get(name: "si_unitbasis"): Xrm.LookupAttribute<"si_unitbasis">;
+      get(name: "si_associatedtoservicestandards"): Xrm.OptionSetAttribute<boolean>;
+      get(name: "si_id"): Xrm.Attribute<string>;
+      get(name: "si_nameen"): Xrm.Attribute<string>;
       get(name: string): undefined;
       get(): Xrm.Attribute<any>[];
       get(index: number): Xrm.Attribute<any>;
@@ -16,11 +14,9 @@ declare namespace Form.si_fee.Quick {
     }
     interface Controls extends Xrm.ControlCollectionBase {
       get(name: "ownerid"): Xrm.LookupControl<"systemuser" | "team">;
-      get(name: "si_displaynameen"): Xrm.StringControl;
-      get(name: "si_displaynamefr"): Xrm.StringControl;
-      get(name: "si_feecode"): Xrm.StringControl;
-      get(name: "si_feegroup"): Xrm.LookupControl<"si_feegroup">;
-      get(name: "si_unitbasis"): Xrm.LookupControl<"si_unitbasis">;
+      get(name: "si_associatedtoservicestandards"): Xrm.OptionSetControl<boolean>;
+      get(name: "si_id"): Xrm.StringControl;
+      get(name: "si_nameen"): Xrm.StringControl;
       get(name: string): undefined;
       get(): Xrm.BaseControl[];
       get(index: number): Xrm.BaseControl;
@@ -35,18 +31,14 @@ declare namespace Form.si_fee.Quick {
   }
   interface Information extends Xrm.PageBase<Information.Attributes,Information.Tabs,Information.Controls> {
     getAttribute(attributeName: "ownerid"): Xrm.LookupAttribute<"systemuser" | "team">;
-    getAttribute(attributeName: "si_displaynameen"): Xrm.Attribute<string>;
-    getAttribute(attributeName: "si_displaynamefr"): Xrm.Attribute<string>;
-    getAttribute(attributeName: "si_feecode"): Xrm.Attribute<string>;
-    getAttribute(attributeName: "si_feegroup"): Xrm.LookupAttribute<"si_feegroup">;
-    getAttribute(attributeName: "si_unitbasis"): Xrm.LookupAttribute<"si_unitbasis">;
+    getAttribute(attributeName: "si_associatedtoservicestandards"): Xrm.OptionSetAttribute<boolean>;
+    getAttribute(attributeName: "si_id"): Xrm.Attribute<string>;
+    getAttribute(attributeName: "si_nameen"): Xrm.Attribute<string>;
     getAttribute(attributeName: string): undefined;
     getControl(controlName: "ownerid"): Xrm.LookupControl<"systemuser" | "team">;
-    getControl(controlName: "si_displaynameen"): Xrm.StringControl;
-    getControl(controlName: "si_displaynamefr"): Xrm.StringControl;
-    getControl(controlName: "si_feecode"): Xrm.StringControl;
-    getControl(controlName: "si_feegroup"): Xrm.LookupControl<"si_feegroup">;
-    getControl(controlName: "si_unitbasis"): Xrm.LookupControl<"si_unitbasis">;
+    getControl(controlName: "si_associatedtoservicestandards"): Xrm.OptionSetControl<boolean>;
+    getControl(controlName: "si_id"): Xrm.StringControl;
+    getControl(controlName: "si_nameen"): Xrm.StringControl;
     getControl(controlName: string): undefined;
   }
 }

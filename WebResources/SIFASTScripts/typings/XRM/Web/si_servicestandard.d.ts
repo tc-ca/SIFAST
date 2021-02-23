@@ -14,6 +14,7 @@ interface si_ServiceStandard_Base extends WebEntity {
   versionnumber?: number | null;
 }
 interface si_ServiceStandard_Relationships {
+  si_Service_si_ServiceStandard?: si_Service_Result[] | null;
   si_Template?: si_ServiceStandardTemplate_Result | null;
   si_ValueType?: si_ServiceStandardValueType_Result | null;
 }
@@ -87,6 +88,7 @@ interface si_ServiceStandard_Filter {
   versionnumber: number;
 }
 interface si_ServiceStandard_Expand {
+  si_Service_si_ServiceStandard: WebExpand<si_ServiceStandard_Expand, si_Service_Select, si_Service_Filter, { si_Service_si_ServiceStandard: si_Service_Result[] }>;
   si_Template: WebExpand<si_ServiceStandard_Expand, si_ServiceStandardTemplate_Select, si_ServiceStandardTemplate_Filter, { si_Template: si_ServiceStandardTemplate_Result }>;
   si_ValueType: WebExpand<si_ServiceStandard_Expand, si_ServiceStandardValueType_Select, si_ServiceStandardValueType_Filter, { si_ValueType: si_ServiceStandardValueType_Result }>;
 }
@@ -131,6 +133,7 @@ interface si_ServiceStandard_RelatedOne {
   si_ValueType: WebMappingRetrieve<si_ServiceStandardValueType_Select,si_ServiceStandardValueType_Expand,si_ServiceStandardValueType_Filter,si_ServiceStandardValueType_Fixed,si_ServiceStandardValueType_Result,si_ServiceStandardValueType_FormattedResult>;
 }
 interface si_ServiceStandard_RelatedMany {
+  si_Service_si_ServiceStandard: WebMappingRetrieve<si_Service_Select,si_Service_Expand,si_Service_Filter,si_Service_Fixed,si_Service_Result,si_Service_FormattedResult>;
 }
 interface WebEntitiesRetrieve {
   si_servicestandards: WebMappingRetrieve<si_ServiceStandard_Select,si_ServiceStandard_Expand,si_ServiceStandard_Filter,si_ServiceStandard_Fixed,si_ServiceStandard_Result,si_ServiceStandard_FormattedResult>;

@@ -31,7 +31,7 @@ declare namespace Form.si_fee.Main {
       get(name: "si_feegroup"): Xrm.LookupAttribute<"si_feegroup">;
       get(name: "si_feereportinggroup"): Xrm.LookupAttribute<"si_feereportinggroup">;
       get(name: "si_feesettingauthority"): Xrm.LookupAttribute<"si_feesettingauthority">;
-      get(name: "si_feetype"): Xrm.OptionSetAttribute<si_feetype>;
+      get(name: "si_feetype"): Xrm.LookupAttribute<"si_feetype">;
       get(name: "si_formula"): Xrm.LookupAttribute<"si_formula">;
       get(name: "si_hourratetype"): Xrm.LookupAttribute<"si_hourratetype">;
       get(name: "si_lineobject"): Xrm.LookupAttribute<"si_lineobject">;
@@ -61,7 +61,7 @@ declare namespace Form.si_fee.Main {
       get(name: "si_feegroup"): Xrm.LookupControl<"si_feegroup">;
       get(name: "si_feereportinggroup"): Xrm.LookupControl<"si_feereportinggroup">;
       get(name: "si_feesettingauthority"): Xrm.LookupControl<"si_feesettingauthority">;
-      get(name: "si_feetype"): Xrm.OptionSetControl<si_feetype>;
+      get(name: "si_feetype"): Xrm.LookupControl<"si_feetype">;
       get(name: "si_formula"): Xrm.LookupControl<"si_formula">;
       get(name: "si_hourratetype"): Xrm.LookupControl<"si_hourratetype">;
       get(name: "si_lineobject"): Xrm.LookupControl<"si_lineobject">;
@@ -99,7 +99,7 @@ declare namespace Form.si_fee.Main {
     getAttribute(attributeName: "si_feegroup"): Xrm.LookupAttribute<"si_feegroup">;
     getAttribute(attributeName: "si_feereportinggroup"): Xrm.LookupAttribute<"si_feereportinggroup">;
     getAttribute(attributeName: "si_feesettingauthority"): Xrm.LookupAttribute<"si_feesettingauthority">;
-    getAttribute(attributeName: "si_feetype"): Xrm.OptionSetAttribute<si_feetype>;
+    getAttribute(attributeName: "si_feetype"): Xrm.LookupAttribute<"si_feetype">;
     getAttribute(attributeName: "si_formula"): Xrm.LookupAttribute<"si_formula">;
     getAttribute(attributeName: "si_hourratetype"): Xrm.LookupAttribute<"si_hourratetype">;
     getAttribute(attributeName: "si_lineobject"): Xrm.LookupAttribute<"si_lineobject">;
@@ -124,7 +124,7 @@ declare namespace Form.si_fee.Main {
     getControl(controlName: "si_feegroup"): Xrm.LookupControl<"si_feegroup">;
     getControl(controlName: "si_feereportinggroup"): Xrm.LookupControl<"si_feereportinggroup">;
     getControl(controlName: "si_feesettingauthority"): Xrm.LookupControl<"si_feesettingauthority">;
-    getControl(controlName: "si_feetype"): Xrm.OptionSetControl<si_feetype>;
+    getControl(controlName: "si_feetype"): Xrm.LookupControl<"si_feetype">;
     getControl(controlName: "si_formula"): Xrm.LookupControl<"si_formula">;
     getControl(controlName: "si_hourratetype"): Xrm.LookupControl<"si_hourratetype">;
     getControl(controlName: "si_lineobject"): Xrm.LookupControl<"si_lineobject">;

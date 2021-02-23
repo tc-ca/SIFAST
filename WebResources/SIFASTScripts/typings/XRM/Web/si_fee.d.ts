@@ -13,7 +13,6 @@ interface si_Fee_Base extends WebEntity {
   si_displaynamefr?: string | null;
   si_feecode?: string | null;
   si_feeid?: string | null;
-  si_feetype?: si_feetype | null;
   si_isonlineservice?: boolean | null;
   si_materialityapplication?: si_materialityapplication | null;
   si_name?: string | null;
@@ -26,6 +25,7 @@ interface si_Fee_Base extends WebEntity {
 }
 interface si_Fee_Relationships {
   si_FeeAmount_Fee_si_Fee?: si_FeeAmount_Result[] | null;
+  si_FeeGroup?: si_FeeGroup_Result | null;
 }
 interface si_Fee extends si_Fee_Base, si_Fee_Relationships {
   ownerid_bind$systemusers?: string | null;
@@ -34,6 +34,7 @@ interface si_Fee extends si_Fee_Base, si_Fee_Relationships {
   si_FeeGroup_bind$si_feegroups?: string | null;
   si_FeeReportingGroup_bind$si_feereportinggroups?: string | null;
   si_FeeSettingAuthority_bind$si_feesettingauthorities?: string | null;
+  si_FeeType_bind$si_feetypes?: string | null;
   si_Formula_bind$si_formulas?: string | null;
   si_HourRateType_bind$si_hourratetypes?: string | null;
   si_LineObject_bind$si_lineobjects?: string | null;
@@ -73,7 +74,7 @@ interface si_Fee_Select {
   si_feeid: WebAttribute<si_Fee_Select, { si_feeid: string | null }, {  }>;
   si_feereportinggroup_guid: WebAttribute<si_Fee_Select, { si_feereportinggroup_guid: string | null }, { si_feereportinggroup_formatted?: string }>;
   si_feesettingauthority_guid: WebAttribute<si_Fee_Select, { si_feesettingauthority_guid: string | null }, { si_feesettingauthority_formatted?: string }>;
-  si_feetype: WebAttribute<si_Fee_Select, { si_feetype: si_feetype | null }, { si_feetype_formatted?: string }>;
+  si_feetype_guid: WebAttribute<si_Fee_Select, { si_feetype_guid: string | null }, { si_feetype_formatted?: string }>;
   si_formula_guid: WebAttribute<si_Fee_Select, { si_formula_guid: string | null }, { si_formula_formatted?: string }>;
   si_hourratetype_guid: WebAttribute<si_Fee_Select, { si_hourratetype_guid: string | null }, { si_hourratetype_formatted?: string }>;
   si_isonlineservice: WebAttribute<si_Fee_Select, { si_isonlineservice: boolean | null }, {  }>;
@@ -118,7 +119,7 @@ interface si_Fee_Filter {
   si_feeid: XQW.Guid;
   si_feereportinggroup_guid: XQW.Guid;
   si_feesettingauthority_guid: XQW.Guid;
-  si_feetype: si_feetype;
+  si_feetype_guid: XQW.Guid;
   si_formula_guid: XQW.Guid;
   si_hourratetype_guid: XQW.Guid;
   si_isonlineservice: boolean;
@@ -138,6 +139,7 @@ interface si_Fee_Filter {
 }
 interface si_Fee_Expand {
   si_FeeAmount_Fee_si_Fee: WebExpand<si_Fee_Expand, si_FeeAmount_Select, si_FeeAmount_Filter, { si_FeeAmount_Fee_si_Fee: si_FeeAmount_Result[] }>;
+  si_FeeGroup: WebExpand<si_Fee_Expand, si_FeeGroup_Select, si_FeeGroup_Filter, { si_FeeGroup: si_FeeGroup_Result }>;
 }
 interface si_Fee_FormattedResult {
   createdby_formatted?: string;
@@ -182,6 +184,7 @@ interface si_Fee_Result extends si_Fee_Base, si_Fee_Relationships {
   si_feegroup_guid: string | null;
   si_feereportinggroup_guid: string | null;
   si_feesettingauthority_guid: string | null;
+  si_feetype_guid: string | null;
   si_formula_guid: string | null;
   si_hourratetype_guid: string | null;
   si_lineobject_guid: string | null;
@@ -191,6 +194,7 @@ interface si_Fee_Result extends si_Fee_Base, si_Fee_Relationships {
   si_unittype_guid: string | null;
 }
 interface si_Fee_RelatedOne {
+  si_FeeGroup: WebMappingRetrieve<si_FeeGroup_Select,si_FeeGroup_Expand,si_FeeGroup_Filter,si_FeeGroup_Fixed,si_FeeGroup_Result,si_FeeGroup_FormattedResult>;
 }
 interface si_Fee_RelatedMany {
   si_FeeAmount_Fee_si_Fee: WebMappingRetrieve<si_FeeAmount_Select,si_FeeAmount_Expand,si_FeeAmount_Filter,si_FeeAmount_Fixed,si_FeeAmount_Result,si_FeeAmount_FormattedResult>;
