@@ -10,4 +10,14 @@
       </AttributeMap>
     </AttributeMaps>
   </EntityMap>
+  <EntityMap>
+    <EntitySource>si_feegroup</EntitySource>
+    <EntityTarget>si_fee</EntityTarget>
+    <AttributeMaps>
+      <AttributeMap>
+        <AttributeSource>si_program</AttributeSource>
+        <AttributeTarget>si_defaultprogram</AttributeTarget>
+      </AttributeMap>
+    </AttributeMaps>
+  </EntityMap>
 </EntityMaps>

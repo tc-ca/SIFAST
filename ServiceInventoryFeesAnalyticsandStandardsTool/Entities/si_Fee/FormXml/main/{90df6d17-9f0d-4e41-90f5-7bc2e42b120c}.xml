@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{4ddd7595-a7ee-42a2-9bab-e62991542132}" IsUserDefined="1">
           <labels>
@@ -20,11 +20,19 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{3bf79858-f426-4b43-8dea-58e759218d40}" locklevel="0">
+                      <cell id="{36edde6e-2448-4ff7-9445-190fa191ee82}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bf79858-f426-4b43-8dea-58e759218d40}" locklevel="1">
                         <labels>
                           <label description="Fee Code" languagecode="1033" />
                         </labels>
-                        <control id="si_feecode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feecode" disabled="false" />
+                        <control id="si_feecode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_feecode" disabled="true" />
                       </cell>
                     </row>
                     <row>
@@ -44,23 +52,35 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{839eb6d4-9252-46ca-a108-5a8e4297b19e}" locklevel="0">
+                      <cell id="{b63d3718-eb98-4fef-8343-2a453a88bd5e}" locklevel="0">
+                        <labels>
+                          <label description="Default Program" languagecode="1033" />
+                        </labels>
+                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{839eb6d4-9252-46ca-a108-5a8e4297b19e}" locklevel="0" showlabel="true">
                         <labels>
                           <label description="Fee Group" languagecode="1033" />
                         </labels>
-                        <control id="si_feegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feegroup" disabled="false" />
+                        <control id="si_feegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feegroup" disabled="false" uniqueid="{0c56ee53-1bdc-b0e8-e788-c0356ccad442}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E56E89C4-EA0D-4FB3-987C-35A3A03F3584}</DefaultViewId>
+                            <FilterRelationshipName>si_FeeGroup_Program_si_Program</FilterRelationshipName>
+                            <DependentAttributeName>si_fee.si_defaultprogram</DependentAttributeName>
+                            <DependentAttributeType>si_program</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
-                      <cell id="{36edde6e-2448-4ff7-9445-190fa191ee82}" visible="false">
-                        <labels>
-                          <label description="Owner" languagecode="1033" />
-                        </labels>
-                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{02114b64-d966-4edf-af25-7df4c0948865}" locklevel="0">
+                      <cell id="{bf11d81f-2955-49da-a6c3-8e08075b9dea}" locklevel="0">
                         <labels>
                           <label description="Fee Type" languagecode="1033" />
                         </labels>
@@ -68,35 +88,11 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{af1fde8a-7f55-4fa8-8538-900324c8061f}" locklevel="0">
+                      <cell id="{7cfbf222-690c-4bd1-98d9-d9a63a3ec17a}" locklevel="0">
                         <labels>
                           <label description="Remission Type" languagecode="1033" />
                         </labels>
-                        <control id="si_remissiontype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_remissiontype" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{ad5e380c-215e-4412-9b4c-c56ff34bb3c4}" locklevel="0">
-                        <labels>
-                          <label description="Formula" languagecode="1033" />
-                        </labels>
-                        <control id="si_formula" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_formula" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{c7f2e97f-28c2-4bd9-8335-9bbb2fefdc65}" locklevel="0">
-                        <labels>
-                          <label description="Line Object" languagecode="1033" />
-                        </labels>
-                        <control id="si_lineobject" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_lineobject" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{4c22d5eb-2930-4bae-baa5-b9fbfc0886de}" locklevel="0">
-                        <labels>
-                          <label description="Hour Rate Type" languagecode="1033" />
-                        </labels>
-                        <control id="si_hourratetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_hourratetype" disabled="false" />
+                        <control id="si_remissiontype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_remissiontype" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -108,19 +104,36 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a6ee1787-2d1e-4d52-a906-163aa19d2931}" locklevel="0">
+                      <cell id="{ad5e380c-215e-4412-9b4c-c56ff34bb3c4}" locklevel="0">
                         <labels>
-                          <label description="Materiality" languagecode="1033" />
+                          <label description="Formula" languagecode="1033" />
                         </labels>
-                        <control id="si_materiality" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_materiality" disabled="false" />
+                        <control id="si_formula" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_formula" disabled="false" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4cacaaa7-526b-47ae-a088-4ffa3e48e379}" locklevel="0">
+                      <cell id="{4c22d5eb-2930-4bae-baa5-b9fbfc0886de}" locklevel="0" showlabel="true" visible="false">
                         <labels>
-                          <label description="Unit Type" languagecode="1033" />
+                          <label description="Hour Rate Type" languagecode="1033" />
                         </labels>
-                        <control id="si_unittype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_unittype" disabled="false" />
+                        <control id="si_hourratetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_hourratetype" disabled="false" uniqueid="{ec940a8b-440c-1719-6b5e-6abb63ee9231}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E7CA8F81-5532-4E22-9725-F5BB9FBA84C7}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c1effcf1-efde-4f5f-84e4-ec8d64dadbd3}" locklevel="0">
+                        <labels>
+                          <label description="Materiality Application" languagecode="1033" />
+                        </labels>
+                        <control id="si_materialityapplication" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_materialityapplication" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -155,60 +168,78 @@
                         <control id="si_paymenttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_paymenttype" disabled="false" />
                       </cell>
                     </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tabFinancialCodes" id="{b459e66c-eac6-b75a-5a39-e269a3b6b85d}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Financial Codes" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{8058ddd4-2e80-451a-7c80-7ace5c42885c}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
                     <row>
-                      <cell id="{a4e62ac5-e11d-4dbb-b611-1b2d7185abbe}" locklevel="0">
+                      <cell id="{b1241500-0586-e25c-8449-24858a535061}" showlabel="true" locklevel="0">
                         <labels>
-                          <label description="Default Resp" languagecode="1033" />
+                          <label description="Default Responsibility Code" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultresp" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultresp" disabled="false" />
+                        <control id="si_defaultresponsibilitycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_defaultresponsibilitycode" disabled="false" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{d6ca83dd-8bb9-45f6-a7b6-0677b2dd05f0}" locklevel="0">
+                      <cell id="{d6ca83dd-8bb9-45f6-a7b6-0677b2dd05f0}" locklevel="0" showlabel="true">
                         <labels>
                           <label description="Default Allotment" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultallotment" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultallotment" disabled="false" />
+                        <control id="si_defaultallotment" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_defaultallotment" disabled="false" uniqueid="{9011c8b1-0b6a-6677-96e1-57e383155dd7}" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2d068d98-54d6-45e2-8e15-c3cde29267b2}" locklevel="0">
+                      <cell id="{c7f2e97f-28c2-4bd9-8335-9bbb2fefdc65}" locklevel="0">
                         <labels>
-                          <label description="Default Project" languagecode="1033" />
+                          <label description="Line Object" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultproject" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultproject" disabled="false" />
+                        <control id="si_lineobject" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_lineobject" disabled="false" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{a6f86fbb-7605-41c9-9bc7-6c4df017d0a0}" locklevel="0">
+                      <cell id="{2d068d98-54d6-45e2-8e15-c3cde29267b2}" locklevel="0" showlabel="true">
                         <labels>
-                          <label description="Default Department" languagecode="1033" />
+                          <label description="Default Project Code" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultdepartment" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="si_defaultdepartment" disabled="false" />
+                        <control id="si_defaultproject" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultproject" disabled="false" uniqueid="{0d667826-152a-23b4-3786-2d776bd6ad19}" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{17a0d976-2edd-4298-b521-595014998bd6}" locklevel="0">
+                      <cell id="{d1aa300a-4676-8552-3077-70d68e78514e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Default Location" languagecode="1033" />
+                        </labels>
+                        <control id="si_defaultlocation" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_defaultlocation" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17a0d976-2edd-4298-b521-595014998bd6}" locklevel="0" showlabel="true">
                         <labels>
                           <label description="Default Expense Account" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultexpenseaccount" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultexpenseaccount" disabled="false" />
+                        <control id="si_defaultexpenseaccount" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_defaultexpenseaccount" disabled="false" uniqueid="{54626385-19a3-be97-5a13-231559bb1edc}" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{8471d373-58bf-4bff-a64d-ca814765e7f4}" locklevel="0">
+                      <cell id="{461580e7-0444-5b79-90de-d1c8cb89cad1}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Default Revenue Account" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultrevenueaccount" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_defaultrevenueaccount" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{1500478e-2afa-4d20-8fb0-f90e9c765a6d}" locklevel="0">
-                        <labels>
-                          <label description="Is Online Service" languagecode="1033" />
-                        </labels>
-                        <control id="si_isonlineservice" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="si_isonlineservice" disabled="false" />
+                        <control id="si_defaultrevenueaccount" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_defaultrevenueaccount" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -224,27 +255,42 @@
           <columns>
             <column width="100%">
               <sections>
-                <section name="tab_2_section_1" id="4b5919d3-4c2e-44bb-8f59-b610f664e82d" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                <section name="tab_2_section_1" id="4b5919d3-4c2e-44bb-8f59-b610f664e82d" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                   <labels>
                     <label description="New Section" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell locklevel="0" id="{d96eeeda-ec0a-4405-bbfa-07da656f3e56}" rowspan="1" colspan="1">
+                      <cell locklevel="0" id="{d96eeeda-ec0a-4405-bbfa-07da656f3e56}" rowspan="6" colspan="1" auto="false" showlabel="false">
                         <labels>
-                          <label description="New SG control 1610031457592" languagecode="1033" />
+                          <label description="Fee Amount" languagecode="1033" />
                         </labels>
-                        <control id="Subgrid_1" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                        <control id="Subgrid_1" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{a1437452-6180-8452-3a59-7edd16532bde}">
                           <parameters>
                             <TargetEntityType>si_feeamount</TargetEntityType>
                             <ViewId>{6B9ABF1F-52FE-469F-AD14-8EB2DC407C2E}</ViewId>
                             <ViewIds>{6B9ABF1F-52FE-469F-AD14-8EB2DC407C2E}</ViewIds>
                             <EnableViewPicker>false</EnableViewPicker>
                             <RelationshipName>si_FeeAmount_Fee_si_Fee</RelationshipName>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <IsUserView>false</IsUserView>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
                           </parameters>
                         </control>
                       </cell>
                     </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
@@ -324,6 +370,74 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{54626385-19a3-be97-5a13-231559bb1edc}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>si_defaultexpenseaccount</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultexpenseaccount</value>
+              <mask static="true" type="SingleLine.Text">A-A-AAAA-AAA-AAA-AAAA-AAAA-AAAA</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultexpenseaccount</value>
+              <mask static="true" type="SingleLine.Text">A-A-AAAA-AAA-AAA-AAAA-AAAA-AAAA</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultexpenseaccount</value>
+              <mask static="true" type="SingleLine.Text">A-A-AAAA-AAA-AAA-AAAA-AAAA-AAAA</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{9011c8b1-0b6a-6677-96e1-57e383155dd7}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>si_defaultallotment</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultallotment</value>
+              <mask static="true" type="SingleLine.Text">AAA</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultallotment</value>
+              <mask static="true" type="SingleLine.Text">AAA</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>si_defaultallotment</value>
+              <mask static="true" type="SingleLine.Text">AAA</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{8784cc21-44d8-5807-56a2-ce010b437c3c}" />
+        <Library name="si_scripts/fee.js" libraryUniqueId="{523bb17a-ad03-b8b9-a857-3711b33d1e46}" />
+      </formLibraries>
+      <events>
+        <event name="onchange" application="false" active="false" attribute="si_feegroup">
+          <Handlers>
+            <Handler functionName="SIFAST.Fee.ValidateFeeGroup" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{803bdd74-e25b-2183-0486-c17aeaa8375a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_defaultprogram">
+          <Handlers>
+            <Handler functionName="SIFAST.Fee.ValidateFeeGroup" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{612beb6b-7ecb-4309-7962-66c7a32d9284}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

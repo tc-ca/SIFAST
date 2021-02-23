@@ -28,12 +28,10 @@
     <AppModuleComponent type="1" schemaName="si_formula" />
     <AppModuleComponent type="1" schemaName="si_hourratetype" />
     <AppModuleComponent type="1" schemaName="si_lineobject" />
-    <AppModuleComponent type="1" schemaName="si_materialityapplication" />
     <AppModuleComponent type="1" schemaName="si_paymenttype" />
     <AppModuleComponent type="1" schemaName="product" />
     <AppModuleComponent type="1" schemaName="si_program" />
     <AppModuleComponent type="1" schemaName="si_regulationfeenotice" />
-    <AppModuleComponent type="1" schemaName="si_remissiontype" />
     <AppModuleComponent type="1" schemaName="si_attribute" />
     <AppModuleComponent type="1" schemaName="si_servicegroup" />
     <AppModuleComponent type="1" schemaName="si_servicestandard" />

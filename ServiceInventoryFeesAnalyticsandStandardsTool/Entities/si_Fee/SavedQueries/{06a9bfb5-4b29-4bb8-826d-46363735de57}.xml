@@ -10,6 +10,7 @@
     <layoutxml>
       <grid name="resultset" jump="si_displaynameen" select="1" icon="1" preview="1">
         <row name="result" id="si_feeid">
+          <cell name="si_feecode" width="100" />
           <cell name="si_displaynameen" width="300" />
           <cell name="createdon" width="125" />
         </row>
@@ -26,6 +27,7 @@
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
           </filter>
+          <attribute name="si_feecode" />
         </entity>
       </fetch>
     </fetchxml>

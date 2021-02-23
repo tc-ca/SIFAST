@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="si_materialityapplication" localizedName="Materiality Application" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.9</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Materiality Application" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="157420000">
+      <labels>
+        <label description="Low-materiality / &lt;51" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420001">
+      <labels>
+        <label description="Low-materiality / 51-151" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420002">
+      <labels>
+        <label description="Low-materiality / Parking" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420003">
+      <labels>
+        <label description="Low-materiality / Schedule 1" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420004">
+      <labels>
+        <label description="Material / &gt;151" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420005">
+      <labels>
+        <label description="Material / 51-151" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420006">
+      <labels>
+        <label description="Material / Schedule 2" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="157420007">
+      <labels>
+        <label description="Material / Formula" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

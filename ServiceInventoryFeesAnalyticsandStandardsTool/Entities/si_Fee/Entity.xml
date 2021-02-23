@@ -518,50 +518,10 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
-          <MaxLength>4</MaxLength>
+          <MaxLength>3</MaxLength>
           <Length>8</Length>
           <displaynames>
             <displayname description="Default Allotment" languagecode="1033" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="si_DefaultDepartment">
-          <Type>int</Type>
-          <Name>si_defaultdepartment</Name>
-          <LogicalName>si_defaultdepartment</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>disabled</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.9</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>1</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>none</Format>
-          <MinValue>-2147483648</MinValue>
-          <MaxValue>2147483647</MaxValue>
-          <displaynames>
-            <displayname description="Default Department" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -607,6 +567,84 @@
             <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="si_DefaultLocation">
+          <Type>nvarchar</Type>
+          <Name>si_defaultlocation</Name>
+          <LogicalName>si_defaultlocation</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.9</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <Format>text</Format>
+          <MaxLength>4</MaxLength>
+          <Length>8</Length>
+          <displaynames>
+            <displayname description="Default Location" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="si_DefaultProgram">
+          <Type>lookup</Type>
+          <Name>si_defaultprogram</Name>
+          <LogicalName>si_defaultprogram</LogicalName>
+          <RequiredLevel>required</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.9</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Default Program" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="si_DefaultProject">
           <Type>nvarchar</Type>
           <Name>si_defaultproject</Name>
@@ -638,7 +676,7 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
-          <MaxLength>50</MaxLength>
+          <MaxLength>4</MaxLength>
           <Length>100</Length>
           <displaynames>
             <displayname description="Default Project" languagecode="1033" />
@@ -647,10 +685,10 @@
             <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="si_DefaultResp">
+        <attribute PhysicalName="si_DefaultResponsibilityCode">
           <Type>nvarchar</Type>
-          <Name>si_defaultresp</Name>
-          <LogicalName>si_defaultresp</LogicalName>
+          <Name>si_defaultresponsibilitycode</Name>
+          <LogicalName>si_defaultresponsibilitycode</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -678,10 +716,10 @@
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
           <Format>text</Format>
-          <MaxLength>4</MaxLength>
-          <Length>8</Length>
+          <MaxLength>100</MaxLength>
+          <Length>200</Length>
           <displaynames>
-            <displayname description="Default Resp" languagecode="1033" />
+            <displayname description="Default Responsibility Code" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -698,7 +736,7 @@
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
+          <IsAuditEnabled>0</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.9</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -706,7 +744,7 @@
           <CanModifySearchSettings>1</CanModifySearchSettings>
           <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
           <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
+          <SourceType>1</SourceType>
           <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
           <IsSortableEnabled>0</IsSortableEnabled>
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
@@ -726,6 +764,7 @@
           <Descriptions>
             <Description description="" languagecode="1033" />
           </Descriptions>
+          <FormulaDefinitionFileName>/Formulas/si_fee-si_defaultrevenueaccount.xaml</FormulaDefinitionFileName>
         </attribute>
         <attribute PhysicalName="si_DisplayNameen">
           <Type>nvarchar</Type>
@@ -811,8 +850,8 @@
           <Type>nvarchar</Type>
           <Name>si_feecode</Name>
           <LogicalName>si_feecode</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ReadOnlyInUI|ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -832,7 +871,7 @@
           <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
           <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
           <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
+          <AutoNumberFormat>SVC-{SEQNUM:4}</AutoNumberFormat>
           <IsSearchable>0</IsSearchable>
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
@@ -1040,7 +1079,7 @@
           <Type>lookup</Type>
           <Name>si_formula</Name>
           <LogicalName>si_formula</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -1078,7 +1117,7 @@
           <Type>lookup</Type>
           <Name>si_hourratetype</Name>
           <LogicalName>si_hourratetype</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -1116,7 +1155,7 @@
           <Type>bit</Type>
           <Name>si_isonlineservice</Name>
           <LogicalName>si_isonlineservice</LogicalName>
-          <RequiredLevel>required</RequiredLevel>
+          <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -1211,17 +1250,18 @@
             <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="si_Materiality">
-          <Type>lookup</Type>
-          <Name>si_materiality</Name>
-          <LogicalName>si_materiality</LogicalName>
+        <attribute PhysicalName="si_MaterialityApplication">
+          <Type>picklist</Type>
+          <Name>si_materialityapplication</Name>
+          <LogicalName>si_materialityapplication</LogicalName>
           <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.9</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -1240,10 +1280,10 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>si_materialityapplication</OptionSetName>
           <displaynames>
-            <displayname description="Materiality" languagecode="1033" />
+            <displayname description="Materiality Application" languagecode="1033" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1033" />
@@ -1366,16 +1406,17 @@
           </Descriptions>
         </attribute>
         <attribute PhysicalName="si_RemissionType">
-          <Type>lookup</Type>
+          <Type>picklist</Type>
           <Name>si_remissiontype</Name>
           <LogicalName>si_remissiontype</LogicalName>
           <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.9</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -1394,8 +1435,8 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <LookupStyle>single</LookupStyle>
-          <LookupTypes />
+          <AppDefaultValue>-1</AppDefaultValue>
+          <OptionSetName>si_remissiontype</OptionSetName>
           <displaynames>
             <displayname description="Remission Type" languagecode="1033" />
           </displaynames>
@@ -1407,7 +1448,7 @@
           <Type>lookup</Type>
           <Name>si_unitbasis</Name>
           <LogicalName>si_unitbasis</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
+          <RequiredLevel>required</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ValidForUpdateApi>1</ValidForUpdateApi>
           <ValidForReadApi>1</ValidForReadApi>
@@ -1678,6 +1719,20 @@
           </Descriptions>
         </attribute>
       </attributes>
+      <EntityKeys>
+        <EntityKey>
+          <Name>si_FeeCode</Name>
+          <LogicalName>si_feecode</LogicalName>
+          <IntroducedVersion>1.0.0.9</IntroducedVersion>
+          <IsCustomizable>0</IsCustomizable>
+          <EntityKeyAttributes>
+            <AttributeName>si_feecode</AttributeName>
+          </EntityKeyAttributes>
+          <displaynames>
+            <displayname description="Fee Code" languagecode="1033" />
+          </displaynames>
+        </EntityKey>
+      </EntityKeys>
       <EntitySetName>si_fees</EntitySetName>
       <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
