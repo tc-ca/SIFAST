@@ -28,11 +28,43 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{ec6b4bc3-0b52-aa4a-3986-04257d559a85}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Fee Code" languagecode="1033" />
+                        </labels>
+                        <control id="si_feecode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_feecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d9971252-8ffb-4ca9-9fa5-ffe346d2307e}" locklevel="0">
+                        <labels>
+                          <label description="French Display Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_displaynamefr" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_displaynamefr" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{39d417e4-57e9-4bee-9fc2-c339c8185029}" locklevel="0">
+                        <labels>
+                          <label description="Fee Group" languagecode="1033" />
+                        </labels>
+                        <control id="si_feegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feegroup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46ac612f-154e-4c80-8cc9-e3d01fc2fefb}" locklevel="0">
+                        <labels>
+                          <label description="Unit Basis" languagecode="1033" />
+                        </labels>
+                        <control id="si_unitbasis" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_unitbasis" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{3facf5f4-c009-4ff5-862d-9c6420ad443c}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
                         </labels>
-                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{c9cc9c32-5e77-375c-d9b1-b6b68c971331}" />
                       </cell>
                     </row>
                   </rows>
@@ -42,6 +74,9 @@
           </columns>
         </tab>
       </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

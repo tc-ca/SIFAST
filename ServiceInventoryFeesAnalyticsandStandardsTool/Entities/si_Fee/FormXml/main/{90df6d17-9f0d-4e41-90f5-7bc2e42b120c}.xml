@@ -56,7 +56,11 @@
                         <labels>
                           <label description="Default Program" languagecode="1033" />
                         </labels>
-                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false" />
+                        <control id="si_defaultprogram" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_defaultprogram" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -84,7 +88,11 @@
                         <labels>
                           <label description="Fee Type" languagecode="1033" />
                         </labels>
-                        <control id="si_feetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feetype" disabled="false" />
+                        <control id="si_feetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feetype" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -100,7 +108,11 @@
                         <labels>
                           <label description="Unit Basis" languagecode="1033" />
                         </labels>
-                        <control id="si_unitbasis" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_unitbasis" disabled="false" />
+                        <control id="si_unitbasis" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_unitbasis" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -108,7 +120,11 @@
                         <labels>
                           <label description="Formula" languagecode="1033" />
                         </labels>
-                        <control id="si_formula" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_formula" disabled="false" />
+                        <control id="si_formula" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_formula" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -141,7 +157,11 @@
                         <labels>
                           <label description="Regulation Fee Notice" languagecode="1033" />
                         </labels>
-                        <control id="si_regulationfeenotice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_regulationfeenotice" disabled="false" />
+                        <control id="si_regulationfeenotice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_regulationfeenotice" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -149,7 +169,11 @@
                         <labels>
                           <label description="Fee Setting Authority" languagecode="1033" />
                         </labels>
-                        <control id="si_feesettingauthority" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feesettingauthority" disabled="false" />
+                        <control id="si_feesettingauthority" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feesettingauthority" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -157,7 +181,11 @@
                         <labels>
                           <label description="Fee Reporting Group" languagecode="1033" />
                         </labels>
-                        <control id="si_feereportinggroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feereportinggroup" disabled="false" />
+                        <control id="si_feereportinggroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_feereportinggroup" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -165,7 +193,11 @@
                         <labels>
                           <label description="Payment Type" languagecode="1033" />
                         </labels>
-                        <control id="si_paymenttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_paymenttype" disabled="false" />
+                        <control id="si_paymenttype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_paymenttype" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                   </rows>
@@ -341,7 +373,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar></NavBar>
+        <NavBar />
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>

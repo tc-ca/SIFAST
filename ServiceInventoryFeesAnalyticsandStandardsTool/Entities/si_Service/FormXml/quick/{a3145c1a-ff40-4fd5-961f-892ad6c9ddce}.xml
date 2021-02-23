@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <systemform>
-    <formid>{80736758-daac-4b6f-9458-b9673ec2b8d7}</formid>
-    <IntroducedVersion>1.0</IntroducedVersion>
+    <formid>{a3145c1a-ff40-4fd5-961f-892ad6c9ddce}</formid>
+    <IntroducedVersion>1.0.0.9</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{420d5e8d-2b71-4f3f-a1c9-ae31b4d231fa}" IsUserDefined="1">
+        <tab id="{7f1772d4-8612-4f8e-980b-d6fc8a3e4b6d}" name="tab_1" showlabel="false">
           <labels>
-            <label description="" languagecode="1033" />
+            <label description="Tab" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{bef0073a-fa44-4f7e-9843-b611cb8cfa2c}">
+                <section id="{20bc5130-49fe-4085-8c2c-3e427d0abb6c}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
                   <labels>
-                    <label description="GENERAL" languagecode="1033" />
+                    <label description="section" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{19c8562b-78db-17de-5549-023ab266db00}" showlabel="true" locklevel="0">
+                      <cell id="{337827c1-3ebe-dd6d-b8ac-45333ccb654e}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Id" languagecode="1033" />
                         </labels>
@@ -28,27 +28,19 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{e944945f-0ea7-4dad-8e3a-f218f6b64845}">
+                      <cell id="{89956758-d40d-0a8c-7b81-25d9c5ba02a6}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="English Name" languagecode="1033" />
                         </labels>
-                        <control id="si_nameen" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_nameen" uniqueid="{cbb35c10-9571-8ee1-17a7-478cd99709b7}" />
+                        <control id="si_nameen" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_nameen" disabled="false" />
                       </cell>
                     </row>
                     <row>
-                      <cell id="{76107060-c0d8-9846-7de8-bee3030659cc}" showlabel="true" locklevel="0">
+                      <cell id="{17a91116-9401-e92e-2bd4-83462743c1eb}" showlabel="true" locklevel="0">
                         <labels>
                           <label description="Associated to Service Standard(s)" languagecode="1033" />
                         </labels>
                         <control id="si_associatedtoservicestandards" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="si_associatedtoservicestandards" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{da9c1bc8-c9d4-4299-a6b1-5e34908a7674}">
-                        <labels>
-                          <label description="Owner" languagecode="1033" />
-                        </labels>
-                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{7e8c8c0b-02b4-50d8-e2c3-4e755ae9566d}" />
                       </cell>
                     </row>
                   </rows>
@@ -58,11 +50,15 @@
           </columns>
         </tab>
       </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
     <LocalizedNames>
-      <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="New Form" languagecode="1033" />
     </LocalizedNames>
   </systemform>
 </forms>

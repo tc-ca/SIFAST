@@ -1528,6 +1528,45 @@
             <Description description="" languagecode="1033" />
           </Descriptions>
         </attribute>
+        <attribute PhysicalName="si_ParentService">
+          <Type>lookup</Type>
+          <Name>si_parentservice</Name>
+          <LogicalName>si_parentservice</LogicalName>
+          <RequiredLevel>none</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>1</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>1</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0.0.9</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>0</IsFilterable>
+          <IsRetrievable>0</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
+          <displaynames>
+            <displayname description="Parent Service" languagecode="1033" />
+          </displaynames>
+          <Descriptions>
+            <Description description="" languagecode="1033" />
+          </Descriptions>
+        </attribute>
         <attribute PhysicalName="si_PIACompleted">
           <Type>bit</Type>
           <Name>si_piacompleted</Name>
@@ -2656,4 +2695,17 @@
   <SavedQueries />
   <Visualizations />
   <RibbonDiffXml />
+  <HierarchyRules>
+    <HierarchyRule>
+      <HierarchyRuleID>{b6d98c5e-f075-eb11-a812-0022486d6288}</HierarchyRuleID>
+      <PrimaryEntityFormID>{80736758-daac-4b6f-9458-b9673ec2b8d7}</PrimaryEntityFormID>
+      <PrimaryEntityLogicalName>si_service</PrimaryEntityLogicalName>
+      <ShowDisabled>1</ShowDisabled>
+      <IntroducedVersion>1.0.0.9</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <LocalizedNames>
+        <LocalizedName description="si_servicehierarchy" languagecode="1033" />
+      </LocalizedNames>
+    </HierarchyRule>
+  </HierarchyRules>
 </Entity>

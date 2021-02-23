@@ -163,6 +163,7 @@
   <EntityRelationship Name="si_Service_ClientTargetGroup_si_ClientTar_si_servicegroup" />
   <EntityRelationship Name="si_Service_Directorate_si_Directorate" />
   <EntityRelationship Name="si_Service_Directorate_si_Directorate_si_servicegroup" />
+  <EntityRelationship Name="si_Service_ParentService_si_Service" />
   <EntityRelationship Name="si_Service_Program_si_Program" />
   <EntityRelationship Name="si_Service_Program_si_Program_si_servicegroup" />
   <EntityRelationship Name="si_Service_ServiceGroup_si_ServiceGroup" />

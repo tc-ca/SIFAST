@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="false" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{190b5524-0647-4b40-bf94-150243b3bd2b}" IsUserDefined="1" name="GeneralTab">
           <labels>
@@ -125,6 +125,14 @@
                           <label description="Associated ADM" languagecode="1033" />
                         </labels>
                         <control id="si_associatedadm" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_associatedadm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c077c01-1334-c3a3-0560-4ccd608e4e49}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Service" languagecode="1033" />
+                        </labels>
+                        <control id="si_parentservice" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_parentservice" disabled="false" />
                       </cell>
                     </row>
                     <row>
@@ -353,6 +361,55 @@
                         </labels>
                       </cell>
                     </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tabChildrenServices" id="{94c8c8e1-75e2-c762-b529-e992880771c3}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Children Services" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{67589169-230b-7db5-9b3a-826263e25179}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dc9a566a-832d-a6bd-5044-b74645463e7b}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="TC Services (Parent Service)" languagecode="1033" />
+                        </labels>
+                        <control id="gridChildrenServices" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{529031EC-EC81-4FB3-B374-150F9D9DE940}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_Service_ParentService_si_Service</RelationshipName>
+                            <TargetEntityType>si_service</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{529031EC-EC81-4FB3-B374-150F9D9DE940}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{F229E586-2329-EB11-A813-0022486D7DDF}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
                   </rows>
                 </section>
               </sections>
@@ -871,6 +928,17 @@
           </NavBarArea>
         </NavBarAreas>
       </Navigation>
+      <formLibraries>
+        <Library name="si_scripts/TCService.js" libraryUniqueId="{6ac9ea62-7c18-e2ed-30c8-e530a61997d6}" />
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{348de087-dc04-0311-d834-bccedee720bd}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SIFAST.TCService.SetTabVisibility" libraryName="si_scripts/TCService.js" handlerUniqueId="{30c82189-3700-1618-d5a8-5175e6b6bed4}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>
