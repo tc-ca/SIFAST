@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0.0.8</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form maxWidth="1920">
       <tabs>
         <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{d9d1a955-bcd3-497d-bc56-eb6fa699531c}">
           <labels>
@@ -107,6 +107,22 @@
         </tab>
       </tabs>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{9a3d90be-8b48-b36e-4523-997198b006b3}" />
+        <Library name="si_scripts/TCServiceStandardFee.js" libraryUniqueId="{74e1d3da-5db6-137b-1ab7-199531e8e0ae}" />
+      </formLibraries>
+      <events>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SIFAST.TCServiceStandardFee.ValidateService" libraryName="si_scripts/TCServiceStandardFee.js" handlerUniqueId="{777320dc-9274-6b2d-3839-c0006eee1d62}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="si_service">
+          <Handlers>
+            <Handler functionName="SIFAST.TCServiceStandardFee.ValidateService" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{63763e17-2cc2-0030-3eb7-beea950d5807}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />

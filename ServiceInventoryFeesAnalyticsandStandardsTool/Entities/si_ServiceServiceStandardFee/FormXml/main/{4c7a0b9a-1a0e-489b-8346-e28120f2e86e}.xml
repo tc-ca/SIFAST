@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form headerdensity="HighWithControls">
+    <form headerdensity="HighWithControls" shownavigationbar="true" showImage="false" maxWidth="1920">
       <tabs>
         <tab verticallayout="true" id="{2733542c-f93b-43c6-886a-ca8293b96f2c}" IsUserDefined="1">
           <labels>
@@ -179,6 +179,17 @@
         </NavBarAreas>
       </Navigation>
       <controlDescriptions />
+      <formLibraries>
+        <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{3aaddd16-3d21-b6d1-9711-290823559428}" />
+        <Library name="si_scripts/TCServiceStandardFee.js" libraryUniqueId="{b827c5e0-1e00-ece7-332c-82263c468da3}" />
+      </formLibraries>
+      <events>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="SIFAST.TCServiceStandardFee.ValidateService" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{68bbb0be-3a44-be07-10e4-e18eca6522e4}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

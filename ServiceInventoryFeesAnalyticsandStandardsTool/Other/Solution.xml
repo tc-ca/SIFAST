@@ -194,6 +194,7 @@
       <RootComponent type="61" schemaName="si_scripts/feeamount.js" behavior="0" />
       <RootComponent type="61" schemaName="si_scripts/serviceStandard.js" behavior="0" />
       <RootComponent type="61" schemaName="si_scripts/TCService.js" behavior="0" />
+      <RootComponent type="61" schemaName="si_scripts/TCServiceStandardFee.js" behavior="0" />
       <RootComponent type="80" schemaName="si_SIFAST" behavior="0" />
     </RootComponents>
     <MissingDependencies>
