@@ -55,7 +55,7 @@ steps:
 - task: PowerPlatformExportSolution@0
   inputs:
     authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'PACE Request Dev'
+    PowerPlatformSPN: 'SIFAST Dev'
     SolutionName: '$(SolutionName)'
     SolutionOutputFile: '$(Build.ArtifactStagingDirectory)\$(SolutionName)_managed.zip'
     Managed: true
