@@ -262,7 +262,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell locklevel="0" id="{3219dd4c-e79b-453c-9c96-a2619be2173a}">
+                      <cell locklevel="0" id="{3219dd4c-e79b-453c-9c96-a2619be2173a}" showlabel="false">
                         <labels>
                           <label description="" languagecode="1033" />
                         </labels>
@@ -467,6 +467,44 @@
                     </row>
                   </rows>
                 </section>
+                <section name="tabStatistics_section_2" showlabel="false" showbar="false" locklevel="0" id="{d7e951d0-d511-e250-d821-b78ea76c41b7}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c2a82955-3380-6505-2b9d-aabb5e419cbc}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="Service Statistics (Service Group)" languagecode="1033" />
+                        </labels>
+                        <control id="gridStatistics" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{d53a43c6-4768-aa0c-0431-c6637e400693}">
+                          <parameters>
+                            <ViewId>{8A238040-52CD-421A-B177-498D86707EE0}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_ServiceStatistic_ServiceGroup_si_Servi</RelationshipName>
+                            <TargetEntityType>si_servicestatistic</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{8A238040-52CD-421A-B177-498D86707EE0}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
               </sections>
             </column>
           </columns>
@@ -515,7 +553,7 @@
         </rows>
       </footer>
       <Navigation>
-        <NavBar />
+        <NavBar></NavBar>
         <NavBarAreas>
           <NavBarArea Id="Info">
             <Titles>
@@ -806,6 +844,79 @@
           <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
             <parameters>
               <value>si_utlilizeseapplication</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{d53a43c6-4768-aa0c-0431-c6637e400693}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{8A238040-52CD-421A-B177-498D86707EE0}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>si_ServiceStatistic_ServiceGroup_si_Servi</RelationshipName>
+              <TargetEntityType>si_servicestatistic</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{8A238040-52CD-421A-B177-498D86707EE0}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>4</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{8A238040-52CD-421A-B177-498D86707EE0}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_ServiceStatistic_ServiceGroup_si_Servi</RelationshipName>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{8A238040-52CD-421A-B177-498D86707EE0}</FilteredViewIds>
+              </data-set>
+              <data-set name="SubGrid">
+                <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{8A238040-52CD-421A-B177-498D86707EE0}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_ServiceStatistic_ServiceGroup_si_Servi</RelationshipName>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{8A238040-52CD-421A-B177-498D86707EE0}</FilteredViewIds>
+              </data-set>
+              <data-set name="SubGrid">
+                <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+                <IsUserView>false</IsUserView>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
             </parameters>
           </customControl>
         </controlDescription>

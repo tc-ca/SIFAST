@@ -20,17 +20,25 @@
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
         <entity name="si_serviceservicestandardfee">
-          <attribute name="si_serviceservicestandardfeeid" />
           <attribute name="createdon" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="si_service" />
           <attribute name="si_servicestandard" />
           <attribute name="si_fee" />
           <attribute name="si_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="si_startdate" operator="olderthan-x-minutes" value="1" />
+              <condition attribute="si_startdate" operator="null" />
+            </filter>
+            <filter type="or">
+              <condition attribute="si_enddate" operator="null" />
+              <condition attribute="si_enddate" operator="next-x-years" value="100" />
+            </filter>
+          </filter>
+          <attribute name="si_serviceservicestandardfeeid" />
         </entity>
       </fetch>
     </fetchxml>

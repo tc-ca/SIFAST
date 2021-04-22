@@ -18,14 +18,14 @@
         </Sequence.Variables>
       </Sequence>
       <Sequence DisplayName="Target">
-        <mcwc:SetAttributeValue DisplayName="si_service.si_servicegroup.si_Service_ServiceGroup_si_ServiceGroup" Entity="[CreatedEntities(&quot;relatedlinked_si_Service_ServiceGroup_si_ServiceGroup#si_servicegroup#si_service#Temp&quot;)]" EntityName="si_service" />
+        <mcwc:SetAttributeValue DisplayName="si_servicestatistic.si_servicegroup.si_ServiceStatistic_ServiceGroup_si_Servi" Entity="[CreatedEntities(&quot;relatedlinked_si_ServiceStatistic_ServiceGroup_si_Servi#si_servicegroup#si_servicestatistic#Temp&quot;)]" EntityName="si_servicestatistic" />
       </Sequence>
       <Sequence DisplayName="Aggregate">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_1" />
           <Variable x:TypeArguments="x:Object" Name="RollupRuleStep1_2" />
         </Sequence.Variables>
-        <mxswa:GetEntityProperty Attribute="si_numberofonlineapplications" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="si_service" Value="[RollupRuleStep1_2]">
+        <mxswa:GetEntityProperty Attribute="si_numberofonlineapplications" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="si_servicestatistic" Value="[RollupRuleStep1_2]">
           <mxswa:GetEntityProperty.TargetType>
             <InArgument x:TypeArguments="s:Type">
               <mxswa:ReferenceLiteral x:TypeArguments="s:Type">

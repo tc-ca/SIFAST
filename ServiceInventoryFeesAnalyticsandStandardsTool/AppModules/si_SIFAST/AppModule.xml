@@ -33,6 +33,9 @@
     <AppModuleComponent type="1" schemaName="si_program" />
     <AppModuleComponent type="1" schemaName="si_regulationfeenotice" />
     <AppModuleComponent type="1" schemaName="si_attribute" />
+    <AppModuleComponent type="26" id="{ee5a1e08-e76e-4a0f-9d92-4734205a9e73}" />
+    <AppModuleComponent type="26" id="{8ffb68e1-88dd-496c-ab4e-c850408e06cb}" />
+    <AppModuleComponent type="26" id="{23070271-b377-eb11-a812-0022486d6288}" />
     <AppModuleComponent type="1" schemaName="si_servicegroup" />
     <AppModuleComponent type="1" schemaName="si_servicestandard" />
     <AppModuleComponent type="1" schemaName="si_servicestandardchannel" />
@@ -40,15 +43,17 @@
     <AppModuleComponent type="1" schemaName="si_servicestandardtype" />
     <AppModuleComponent type="1" schemaName="si_servicestandardvaluetype" />
     <AppModuleComponent type="1" schemaName="si_servicestandardwindow" />
+    <AppModuleComponent type="1" schemaName="si_servicestatistic" />
     <AppModuleComponent type="1" schemaName="si_servicetype" />
     <AppModuleComponent type="1" schemaName="si_serviceservicestandardfee" />
     <AppModuleComponent type="60" id="{05af0519-5d45-eb11-a812-0022486d7ddf}" />
-    <AppModuleComponent type="1" schemaName="si_serviceservicestandardfeeattribute" />
     <AppModuleComponent type="1" schemaName="si_specialdesignation" />
     <AppModuleComponent type="1" schemaName="si_service" />
     <AppModuleComponent type="1" schemaName="si_unitbasis" />
   </AppModuleComponents>
   <AppModuleRoleMaps>
+    <Role id="{6b4625fc-fc7c-eb11-a812-000d3af47402}" />
+    <Role id="{7f418562-007d-eb11-a812-000d3af47402}" />
     <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
     <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
   </AppModuleRoleMaps>

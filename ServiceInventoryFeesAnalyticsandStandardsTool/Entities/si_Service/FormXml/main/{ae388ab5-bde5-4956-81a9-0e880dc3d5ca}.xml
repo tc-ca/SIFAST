@@ -1,0 +1,1189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ae388ab5-bde5-4956-81a9-0e880dc3d5ca}</formid>
+    <IntroducedVersion>1.0.0.9</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls" shownavigationbar="false" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{190b5524-0647-4b40-bf94-150243b3bd2b}" IsUserDefined="1" name="GeneralTab" labelid="{bdf77527-96c9-4a64-9f21-51f27d60ddbe}" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="secBasicServiceData" id="1d2755ab-da6f-44e8-bfeb-660122daf000" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115" labelid="{7481b926-a043-48f6-aa3b-ec3a97ee7013}">
+                  <labels>
+                    <label description="Basic Service Data" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{399b77fe-462f-4573-bbee-5833a40fdf8b}" locklevel="0" labelid="{c096f0bc-b264-4bf0-a63c-864a8be70ee5}">
+                        <labels>
+                          <label description="Id" languagecode="1033" />
+                        </labels>
+                        <control id="si_id" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_id" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c49850f8-7e55-4b1f-9734-098a14fac12a}" locklevel="0" labelid="{28b47547-ea56-41c8-acee-d3ed14d36241}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicestatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_servicestatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9b55bc55-c19f-428f-9753-19ab5f30ca62}" labelid="{e846483c-d3ad-4918-9b48-0c7f8d80bbe3}">
+                        <labels>
+                          <label description="English Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_nameen" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_nameen" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a0c86cf-b112-4fe2-bba6-ba399a3fce47}" locklevel="0" labelid="{b81947bf-66d8-4090-aee2-b4d5e83bb47c}">
+                        <labels>
+                          <label description="French Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_namefr" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_namefr" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86e2ae54-1fd9-414e-b457-50aadd4a3066}" locklevel="0" rowspan="3" labelid="{04e6e4e9-4653-46bb-8847-1e628a83d795}">
+                        <labels>
+                          <label description="English Description" languagecode="1033" />
+                        </labels>
+                        <control id="si_englishdescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_englishdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{f006faaf-63c5-4593-84d4-2d10de105c27}" locklevel="0" rowspan="3" labelid="{cc5c7883-6049-4fed-bb98-81d150bbac12}">
+                        <labels>
+                          <label description="French Description" languagecode="1033" />
+                        </labels>
+                        <control id="si_frenchdescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_frenchdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{331c970b-8aa5-4ff2-8344-32d84fe36279}" locklevel="0" labelid="{56fbbbb6-06ba-4639-aa1a-a83f96cbf877}">
+                        <labels>
+                          <label description="Service Group" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicegroup" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36ff7017-e79f-4ef5-85d4-72c7cf158339}" locklevel="0" labelid="{7044cd8c-68fd-4827-878e-d1058415218b}">
+                        <labels>
+                          <label description="URL to English Page" languagecode="1033" />
+                        </labels>
+                        <control id="si_urltoenglishpage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_urltoenglishpage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2db107fa-9f90-40e6-ad8a-18e7c8b1d3f7}" locklevel="0" labelid="{0a4b51be-187a-4e9d-b9fa-1d93fee1ebdf}">
+                        <labels>
+                          <label description="URL to French Page" languagecode="1033" />
+                        </labels>
+                        <control id="si_urltofrenchpage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_urltofrenchpage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d1e40c39-ccdd-40a8-9f2a-92c9086205c5}" locklevel="0" labelid="{be338a82-b787-4d56-b22a-7deef7f9ab20}">
+                        <labels>
+                          <label description="English Comments" languagecode="1033" />
+                        </labels>
+                        <control id="si_englishcomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_englishcomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{746b3c10-cb5d-43f0-ab72-18c00dea6568}" locklevel="0" labelid="{c553c2ab-5bfc-457f-b17f-224d322e7ee7}">
+                        <labels>
+                          <label description="French Comments" languagecode="1033" />
+                        </labels>
+                        <control id="si_frenchcomments" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_frenchcomments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{05eca274-91bc-46fc-8944-bea6ffc32928}" locklevel="0" labelid="{ddceff0e-ce0b-4a45-8fa4-769582f8d517}">
+                        <labels>
+                          <label description="Program" languagecode="1033" />
+                        </labels>
+                        <control id="si_program" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_program" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b344819-85f1-4b01-a670-56b867714378}" locklevel="0" labelid="{756d6e94-3d82-40e0-a34c-cb6192fd7894}">
+                        <labels>
+                          <label description="Associated ADM" languagecode="1033" />
+                        </labels>
+                        <control id="si_associatedadm" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="si_associatedadm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79d01ecc-6ec3-2539-050b-ba24db8d1c7a}" showlabel="true" locklevel="0" labelid="{e1429027-a2a0-43b1-8f1d-9517ad2894bc}">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5491b5e-2915-8bb1-2591-c35162316383}" showlabel="true" locklevel="0" labelid="{72610e9a-f08c-4cb1-8daf-67981f855165}">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{73d41c15-7f70-4760-a7a3-9f30250f0029}" showlabel="true" visible="false" labelid="{52922906-1efe-4b9c-b669-9983e088dcaf}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="secServiceDetails" id="24be9a67-d398-4c06-b156-47ca8a0ffe6c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{94624bfb-9481-4dba-bba2-7a68206a837b}">
+                  <labels>
+                    <label description="Service Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dc446c63-a4ce-eb51-3895-1a6b8810855d}" showlabel="true" locklevel="0" labelid="{1213cf0d-f4da-4cb1-8892-05dc6a7a7aeb}">
+                        <labels>
+                          <label description="Associated to Service Standard(s)" languagecode="1033" />
+                        </labels>
+                        <control id="si_associatedtoservicestandards" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_associatedtoservicestandards" disabled="false" uniqueid="{032751e7-a9e3-6910-91c6-40dbd07c676b}" />
+                      </cell>
+                      <cell id="{2a497d1d-200c-4eae-9a7b-7f9cee942ebd}" locklevel="0" labelid="{f2c82b18-9f73-431d-b5af-f09eda839bd0}">
+                        <labels>
+                          <label description="Business Line" languagecode="1033" />
+                        </labels>
+                        <control id="si_businessline" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_businessline" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a3ec610-a517-4227-9bc4-6263f4ca532e}" locklevel="0" labelid="{82cf9725-522a-4bfa-97d7-d47f2849618f}">
+                        <labels>
+                          <label description="Service Scope" languagecode="1033" />
+                        </labels>
+                        <control id="si_accesstype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_accesstype" disabled="false" />
+                      </cell>
+                      <cell id="{d6b3957d-9bed-7e40-88e4-e3b93b081dc0}" showlabel="true" locklevel="0" labelid="{c97d50da-a93b-45ba-b638-171e1a0e9960}">
+                        <labels>
+                          <label description="Service Fee" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicefee" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_servicefee" disabled="false" uniqueid="{51ebe9c1-31a3-658a-cea7-466225914a3c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3da63faf-d718-4217-86fd-299af11df14e}" locklevel="0" labelid="{ed93a032-bbcf-4958-8995-296029b417f9}">
+                        <labels>
+                          <label description="Special Designation" languagecode="1033" />
+                        </labels>
+                        <control id="si_specialdesignation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_specialdesignation" disabled="false" />
+                      </cell>
+                      <cell id="{ef11510c-7f7c-4021-8e8a-0932d77f6a86}" locklevel="0" labelid="{033445ca-c3f5-4fbf-9270-218430e6d21b}">
+                        <labels>
+                          <label description="Service Type" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicetype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cae37fbf-9fbf-4bcb-9fbe-5c8e3cfe521a}" locklevel="0" labelid="{721f95e2-c216-4d33-99c2-480bfaba6121}">
+                        <labels>
+                          <label description="Last GBA &amp; Analysis Completed Since 2014-2015" languagecode="1033" />
+                        </labels>
+                        <control id="si_lastgbaanalysiscompletedsince20142015" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_lastgbaanalysiscompletedsince20142015" disabled="false" />
+                      </cell>
+                      <cell id="{6c239eec-e4d4-4f02-9c61-fd7ca1125f71}" locklevel="0" labelid="{5c01c1ad-9f78-4421-930d-e58ad173c2aa}">
+                        <labels>
+                          <label description="Directorate" languagecode="1033" />
+                        </labels>
+                        <control id="si_directorate" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_directorate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc67e72a-3411-4ed4-80e4-8d5512e00515}" locklevel="0" labelid="{eb3d5623-6889-443b-baa9-655733a59f6b}">
+                        <labels>
+                          <label description="Client-Target Group" languagecode="1033" />
+                        </labels>
+                        <control id="si_clienttargetgroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_clienttargetgroup" disabled="false" />
+                      </cell>
+                      <cell id="{82d3ca87-c9dd-26e2-5bb6-52d34292a9c5}" showlabel="true" locklevel="0" labelid="{48ed06d0-487e-447e-85d2-a86ad37fa025}">
+                        <labels>
+                          <label description="Client Feedback by Channel" languagecode="1033" />
+                        </labels>
+                        <control id="si_clientfeedbackbychannel" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="si_clientfeedbackbychannel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{ca925f9a-9034-4ae9-aace-7bc4954edea4}" showlabel="true" labelid="{5c356a67-1e8a-4567-adf8-c37adf3b4281}">
+                        <labels>
+                          <label description="PIA Completed" languagecode="1033" />
+                        </labels>
+                        <control id="si_piacompleted" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_piacompleted" disabled="false" uniqueid="{1fdaf638-2aed-4528-8f30-20db6fb69eff}" />
+                      </cell>
+                      <cell id="{5a0c0c05-304e-4d07-6851-a048ad04e3c2}" showlabel="true" locklevel="0" labelid="{d6adf7ca-816b-4d68-b2f2-080a5ebb89de}">
+                        <labels>
+                          <label description="Channels through which the Service is offered" languagecode="1033" />
+                        </labels>
+                        <control id="si_channelserviceisoffered" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="si_channelserviceisoffered" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b78c845-9335-a306-0cb5-b9ed35bbd863}" showlabel="true" locklevel="0" labelid="{b2a83722-27f7-4540-9791-982404bfec9e}">
+                        <labels>
+                          <label description="Utilizes CRA Business Number" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizescrabusinessnumber" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizescrabusinessnumber" disabled="false" uniqueid="{aa8228eb-b04e-6b00-a8e0-5ea7a8316532}" />
+                      </cell>
+                      <cell id="{b81feb15-d15f-451c-81dc-5e30c97d2af7}" locklevel="0" labelid="{08d4e9da-a9ec-4238-a78d-32d1633f9b7c}">
+                        <labels>
+                          <label description="Year of Last PIA" languagecode="1033" />
+                        </labels>
+                        <control id="si_yearoflastpia" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="si_yearoflastpia" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cd5e26b9-73b1-5412-42ae-067825db9359}" showlabel="false" labelid="{f5d8ebe6-0b5e-4f48-9a92-8212ba35f055}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{54a9c160-4057-e6ed-029d-d57b9cb1c0a0}" showlabel="true" locklevel="0" labelid="{25ff3dbf-90e7-493d-9a63-f13d68293958}">
+                        <labels>
+                          <label description="Utilizes SIN Number" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizessinnumber" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizessinnumber" disabled="false" uniqueid="{2ac808ac-9e79-4988-edd8-e4b4e8904db0}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="secServiceDigitizationDelivery" id="175045cf-115f-470a-9d73-b83db460ba65" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{e30a1322-9710-4016-99c2-998f49f8ea57}">
+                  <labels>
+                    <label description="Service Digitization and Delivery" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{47ca9607-c753-590e-22a0-1b34dad88955}" showlabel="true" locklevel="0" labelid="{5909d43b-e734-40c3-8b5f-e9c835aed6ff}">
+                        <labels>
+                          <label description="Utilizes E-Authentication" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizeseauthentication" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizeseauthentication" disabled="false" uniqueid="{bd1dd663-2085-eecb-5a9e-0a704696e779}" />
+                      </cell>
+                      <cell id="{8de1545a-4aa2-cd20-0c78-bb2bc6a620e2}" showlabel="true" locklevel="0" labelid="{bdefb867-6326-43ff-a8e4-fc75abbea164}">
+                        <labels>
+                          <label description="Utilizes E-Issuance" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizeseissuance" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizeseissuance" disabled="false" uniqueid="{01d40e06-b986-a38c-dc27-bd349c87e5ca}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b49733d2-701d-abeb-342d-c749be5719e2}" showlabel="true" locklevel="0" labelid="{9001e315-1208-4327-a132-c940e4548c24}">
+                        <labels>
+                          <label description="Utilizes E-Decision" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizesedecision" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizesedecision" disabled="false" uniqueid="{e8ba53e1-8523-e7c6-5b12-7714868dbb5b}" />
+                      </cell>
+                      <cell id="{c1ba09a9-47aa-b195-43b0-d888c0a722e0}" showlabel="true" locklevel="0" labelid="{3d131522-403c-4b76-8f58-a0612e8fc9e4}">
+                        <labels>
+                          <label description="Utilizes E-Resolution" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizeseresolution" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizeseresolution" disabled="false" uniqueid="{1b7c36de-d181-4b9a-8942-1901029b0671}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{395b8320-6e72-4ab0-de5c-bdce6b43541b}" showlabel="true" locklevel="0" labelid="{4d50a919-d27e-4a73-b0a2-d2630b8121ff}">
+                        <labels>
+                          <label description="Utilizes E-Registration" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizeseregistration" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizeseregistration" disabled="false" uniqueid="{c9c2d733-0e4b-599a-819e-9c77c7e71ca6}" />
+                      </cell>
+                      <cell id="{6b06654e-5e76-914c-356a-7018bd61031c}" showlabel="true" locklevel="0" labelid="{7bd9e80a-de62-499c-9af4-13b251d0d3b0}">
+                        <labels>
+                          <label description="Utlilizes E-Application" languagecode="1033" />
+                        </labels>
+                        <control id="si_utlilizeseapplication" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utlilizeseapplication" disabled="false" uniqueid="{e850364e-8b15-e8d5-1cb6-0cad70656ab9}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72b43c75-3117-37d2-8674-dcd145673136}" showlabel="true" locklevel="0" labelid="{1b514613-6dee-49cd-a026-f44bfe15cdef}">
+                        <labels>
+                          <label description="Utilizes Enterprise Digital Identity Platform" languagecode="1033" />
+                        </labels>
+                        <control id="si_utilizesentdigitalidentityplatform" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="si_utilizesentdigitalidentityplatform" disabled="false" uniqueid="{a1b3623b-6433-d7ab-9271-a49d9011d003}" />
+                      </cell>
+                      <cell id="{e4b4bced-64bf-4827-9b49-69859f13812a}" locklevel="0" rowspan="3" labelid="{5372dcc5-9dd2-4738-85c8-80a2814c5ac8}">
+                        <labels>
+                          <label description="Comments on Digital Enterprise Identity Platform" languagecode="1033" />
+                        </labels>
+                        <control id="si_commentsdigitalenterpriseidentityplatform" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_commentsdigitalenterpriseidentityplatform" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10b58dee-5534-4d67-8b75-c954b93702d5}" locklevel="0" rowspan="3" labelid="{2e29e48e-d059-4fb8-ae12-5afc332a19b5}">
+                        <labels>
+                          <label description="English Comments Related to Online Services" languagecode="1033" />
+                        </labels>
+                        <control id="si_englishcommentsrelatedtoonlineservices" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_englishcommentsrelatedtoonlineservices" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0d09423-55b3-ed7c-6e28-5870a85b9072}" showlabel="false" labelid="{c5119ba0-6e7c-493b-a811-fc692a1925d3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{553fcb05-d4f7-49b1-ac0b-6a584e4b930d}" locklevel="0" rowspan="3" labelid="{85d732e8-803e-4a60-93b1-18b74c2b07c8}">
+                        <labels>
+                          <label description="French Comments related to Online Services" languagecode="1033" />
+                        </labels>
+                        <control id="si_frenchcommentsrelatedtoonlineservices" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="si_frenchcommentsrelatedtoonlineservices" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{432365c2-6518-59d9-626e-80ed5ee571a0}" showlabel="false" labelid="{142e464d-05dd-4e5b-a449-3ba8e5642957}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e12e7915-b0ee-9316-6445-26593ca8a798}" showlabel="false" labelid="{bdab6872-455b-4ae8-970f-0e7b01769add}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tabServiceAttribute" id="{1e653e20-0add-11b3-8ce5-380808c10064}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{a8b3df65-f2aa-411e-bd5b-329d159a027c}">
+          <labels>
+            <label description="Service Attribute" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{09ddd270-5db7-5701-2dac-2047b7c67d5a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{41b8b1b8-efc1-4070-8ce0-dc12998b3f5c}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{051ce4a5-ec83-89d9-bcca-226de3886bea}" showlabel="false" colspan="1" auto="false" rowspan="6" labelid="{29b17c0c-3635-4178-84f5-5609732e812c}">
+                        <labels>
+                          <label description="Service Attributes" languagecode="1033" />
+                        </labels>
+                        <control id="gridServiceAttributeTree" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{e5992816-1dd3-dbd3-3bcb-57da0ddd790c}">
+                          <parameters>
+                            <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+                            <TargetEntityType>si_attribute</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{37985b4d-3236-e304-c482-d15ab96ea6c2}" showlabel="true" colspan="1" auto="false" rowspan="13" labelid="{d3dc41a0-c2d2-47b9-bda0-c302f262c3a1}">
+                        <labels>
+                          <label description="Linked Attributes" languagecode="1033" />
+                        </labels>
+                        <control id="gridLinkedServiceAttribute" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{9a006644-21e4-9ce6-0c82-89e92b3899ba}">
+                          <parameters>
+                            <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+                            <TargetEntityType>si_attribute</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tabServiceStandard" id="{eb576a73-9e92-5834-62c1-b06a963b5248}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{b9f38644-ad06-41e9-9966-17e9b3374e21}">
+          <labels>
+            <label description="Service Standard" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{8544804a-28a1-0d30-4dca-0d7e8c2e11c6}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{f2672287-233d-4605-9a06-adc2f1c41661}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8c4bc8e7-5000-8381-e4c1-177250d6b04d}" showlabel="false" colspan="1" auto="false" rowspan="6" labelid="{5a94ee35-35e8-454b-a99e-21c1a7a51db2}">
+                        <labels>
+                          <label description="Service Standard" languagecode="1033" />
+                        </labels>
+                        <control id="gridServiceStandard" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{6a82dd25-c940-a45a-eb9c-de20b500c41d}">
+                          <parameters>
+                            <ViewId>{CEF2BF33-E87D-EB11-A812-000D3AF4E581}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_Service_si_ServiceStandard</RelationshipName>
+                            <TargetEntityType>si_servicestandard</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{5D2B5FE0-61C6-47C6-BF74-C1278225820F},{CEF2BF33-E87D-EB11-A812-000D3AF4E581}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tabServiceStandardFee" id="{c74c7c82-73a9-5c13-4de1-1351944a25c8}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{f53b4608-1e90-41c0-9352-6a07f7bf68e2}">
+          <labels>
+            <label description="Fee" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{6b93c960-da4c-bd3a-57d4-4e6a4143b608}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{a530b129-1597-4443-bf0e-56617e2d3b03}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{73b9e419-75be-75ca-6de5-336642c9361a}" showlabel="false" colspan="1" auto="false" rowspan="6" labelid="{aa615971-4092-4a72-bf75-55301da60d1b}">
+                        <labels>
+                          <label description="Service Standard-Fees" languagecode="1033" />
+                        </labels>
+                        <control id="gridServiceStandardAndFee" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{a27b3b64-c38c-13dc-9e05-b3bd79249bc7}">
+                          <parameters>
+                            <ViewId>{EB0070E6-5B45-EB11-A812-0022486D7737}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_ServiceServiceStandardFee_Service_si_S</RelationshipName>
+                            <TargetEntityType>si_serviceservicestandardfee</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{EAB0616D-118A-4EB1-9A96-2096D0E83502},{EB0070E6-5B45-EB11-A812-0022486D7737}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="67ba57d4-9a28-4d93-a9da-4b9c1fc7ebf1" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{fd385bc1-ab23-4e02-8e12-c7ba4042ec05}">
+          <labels>
+            <label description="Statistics" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" id="6428e580-3866-4f1f-8a0b-95880d079640" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115" labelid="{70c6c475-f188-4505-81e3-a58bbf8600f3}" visible="false">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{90eec367-ea73-d161-4d9e-2a2c4aaa7e94}" showlabel="true" locklevel="0" labelid="{bb75c5b9-aa5b-4084-b31b-cd2ce5577671}">
+                        <labels>
+                          <label description="Number of In-Person Applications" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofinpersonapplications" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofinpersonapplications" disabled="false" uniqueid="{795b828d-4639-2233-b3d2-8dbed5860004}" />
+                      </cell>
+                      <cell id="{481ba848-ead9-79c4-4e40-21567e73d2d1}" showlabel="true" locklevel="0" labelid="{d5e1cc81-cc58-4e1a-863f-ba9f0a1c10c8}">
+                        <labels>
+                          <label description="Number of Telephone Inquires" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberoftelephoneinquires" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberoftelephoneinquires" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ad4d2c2-9e37-78ec-8629-bc62b6a8289e}" showlabel="true" locklevel="0" labelid="{c146ef94-3f61-4682-ad82-cbf2c37f6c8a}">
+                        <labels>
+                          <label description="Number of Applications by Mail" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsbymail" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsbymail" disabled="false" />
+                      </cell>
+                      <cell id="{50ac28c6-0608-809b-7a55-a1eb611e3bdd}" showlabel="true" locklevel="0" labelid="{20a41a3d-2c8e-4693-9730-c8d43c76f21d}">
+                        <labels>
+                          <label description="Number of Website Visits" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofwebsitevisits" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofwebsitevisits" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e6c7d7b-802c-8e1c-3400-2ca725c75324}" showlabel="true" locklevel="0" labelid="{dcab9b1c-c35e-4a9e-ad1f-b8247f4cf676}">
+                        <labels>
+                          <label description="Number of Online Applications" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofonlineapplications" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofonlineapplications" disabled="false" />
+                      </cell>
+                      <cell id="{e01016be-ce96-2c9c-3635-6c0416871ab7}" showlabel="true" locklevel="0" labelid="{b47ae883-1aad-4cff-9aa8-a0346f871db3}">
+                        <labels>
+                          <label description="Number of Applications Through Other Channels" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsthroughotherchannels" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsthroughotherchannels" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4189674a-c37c-d432-aa47-58b2007586d8}" showlabel="true" locklevel="0" labelid="{bcf8dda3-11ef-46f4-98a7-2e545584e9ec}">
+                        <labels>
+                          <label description="Number of Applications by Telephone" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsbytelephone" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsbytelephone" disabled="false" />
+                      </cell>
+                      <cell id="{0aac05d6-6957-e128-69b6-755495a90952}" showlabel="true" locklevel="0" labelid="{150e0a00-0f28-4e42-9b36-6581186cba29}">
+                        <labels>
+                          <label description="Total Annual Volume" languagecode="1033" />
+                        </labels>
+                        <control id="si_totalannualvolume" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_totalannualvolume" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_2" showlabel="false" showbar="false" locklevel="0" id="{12a53135-6259-5586-116e-2e001a85eba7}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{88720bd1-be96-41b5-9bbb-b9e488be287e}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{249c8971-077a-25dd-e539-d8e2dda16db9}" showlabel="false" colspan="1" auto="false" rowspan="22" labelid="{44c53a11-692c-4342-8d0c-c2aefdf458e5}">
+                        <labels>
+                          <label description="Service Statistics (Service)" languagecode="1033" />
+                        </labels>
+                        <control id="gridStatistics" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" indicationOfSubgrid="true" uniqueid="{ce6cbac3-0e60-19ac-1328-6d9d03cc2119}">
+                          <parameters>
+                            <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>si_ServiceStatistic_Service_si_Service</RelationshipName>
+                            <TargetEntityType>si_servicestatistic</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{8A238040-52CD-421A-B177-498D86707EE0},{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>20</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8d5486e2-f1ce-46db-8a75-b8a30a9b235e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{830a02a9-82db-449f-8321-195896ae8d3d}" showlabel="false" labelid="{3e78bb86-6d72-45f1-9e74-ffe50df04ee9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9ea67917-e0a2-4cdd-bc7b-2e98ec9b4c9c}" showlabel="false" labelid="{f25a9a75-f1fc-46b5-aafc-2de331fad48e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5523f487-8b74-47bb-b58d-d7e522ddc865}" showlabel="false" labelid="{d5c97444-dd82-408a-b586-b7c64a4da050}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{95fd5bdc-f7ca-4403-9339-4bbaf2222f22}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2fe6fbf3-bf27-4a81-8965-35ba80cd3a1a}" showlabel="false" labelid="{eff1d22a-ff9e-490b-a0cd-cf81eb1d0f31}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f5cfbbef-a6b2-49b9-be53-a5b6e8c6c652}" showlabel="false" labelid="{b5075602-b75a-461c-8412-7ef26fb2a1ca}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{eeb1fd94-6daa-48f5-b5db-ff9fb26479e2}" showlabel="false" labelid="{07e652dc-5b54-4267-a9a3-f9aab5de6c5f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <controlDescriptions>
+        <controlDescription forControl="{1fdaf638-2aed-4528-8f30-20db6fb69eff}">
+          <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>si_piacompleted</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_piacompleted</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_piacompleted</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_piacompleted</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{bd1dd663-2085-eecb-5a9e-0a704696e779}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizeseauthentication</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseauthentication</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseauthentication</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseauthentication</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{01d40e06-b986-a38c-dc27-bd349c87e5ca}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizeseissuance</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseissuance</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseissuance</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseissuance</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e8ba53e1-8523-e7c6-5b12-7714868dbb5b}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizesedecision</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesedecision</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesedecision</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesedecision</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{1b7c36de-d181-4b9a-8942-1901029b0671}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizeseresolution</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseresolution</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseresolution</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseresolution</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{c9c2d733-0e4b-599a-819e-9c77c7e71ca6}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizeseregistration</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseregistration</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseregistration</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizeseregistration</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e850364e-8b15-e8d5-1cb6-0cad70656ab9}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utlilizeseapplication</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utlilizeseapplication</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utlilizeseapplication</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utlilizeseapplication</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{a1b3623b-6433-d7ab-9271-a49d9011d003}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizesentdigitalidentityplatform</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesentdigitalidentityplatform</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesentdigitalidentityplatform</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizesentdigitalidentityplatform</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{032751e7-a9e3-6910-91c6-40dbd07c676b}">
+          <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>si_associatedtoservicestandards</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_associatedtoservicestandards</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_associatedtoservicestandards</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_associatedtoservicestandards</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{aa8228eb-b04e-6b00-a8e0-5ea7a8316532}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizescrabusinessnumber</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizescrabusinessnumber</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizescrabusinessnumber</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizescrabusinessnumber</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{2ac808ac-9e79-4988-edd8-e4b4e8904db0}">
+          <customControl id="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}">
+            <parameters>
+              <datafieldname>si_utilizessinnumber</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizessinnumber</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizessinnumber</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.OptionSet.OptionSetControl">
+            <parameters>
+              <value>si_utilizessinnumber</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{51ebe9c1-31a3-658a-cea7-466225914a3c}">
+          <customControl id="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>si_servicefee</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_servicefee</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_servicefee</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value>si_servicefee</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e5992816-1dd3-dbd3-3bcb-57da0ddd790c}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}">
+            <parameters>
+              <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+              <TargetEntityType>si_attribute</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>4</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+              <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="ita_ItAintBoring.PCFControls.TreeRelationships">
+            <parameters>
+              <data-set name="tableGrid">
+                <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+                <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                <TargetEntityType>si_attribute</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</FilteredViewIds>
+              </data-set>
+              <treeEntityName static="true" type="SingleLine.Text">si_attribute</treeEntityName>
+              <treeEntityAttribute static="true" type="SingleLine.Text">si_parentattribute</treeEntityAttribute>
+              <nameAttribute static="true" type="SingleLine.Text">si_name</nameAttribute>
+              <idAttribute static="true" type="SingleLine.Text">si_attributeid</idAttribute>
+              <relationshipName static="true" type="SingleLine.Text">si_Service_Service_Attribute</relationshipName>
+              <relationshipEntity static="true" type="SingleLine.Text">si_service_si_attribute</relationshipEntity>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="ita_ItAintBoring.PCFControls.TreeRelationships">
+            <parameters>
+              <data-set name="tableGrid">
+                <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+                <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                <TargetEntityType>si_attribute</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</FilteredViewIds>
+              </data-set>
+              <treeEntityName static="true" type="SingleLine.Text">si_attribute</treeEntityName>
+              <treeEntityAttribute static="true" type="SingleLine.Text">si_parentattribute</treeEntityAttribute>
+              <nameAttribute static="true" type="SingleLine.Text">si_name</nameAttribute>
+              <idAttribute static="true" type="SingleLine.Text">si_attributeid</idAttribute>
+              <relationshipName static="true" type="SingleLine.Text">si_Service_Service_Attribute</relationshipName>
+              <relationshipEntity static="true" type="SingleLine.Text">si_service_si_attribute</relationshipEntity>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="ita_ItAintBoring.PCFControls.TreeRelationships">
+            <parameters>
+              <data-set name="tableGrid">
+                <ViewId>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</ViewId>
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_Service_Service_Attribute</RelationshipName>
+                <RelationshipRoleOrdinal>2</RelationshipRoleOrdinal>
+                <TargetEntityType>si_attribute</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73}</FilteredViewIds>
+              </data-set>
+              <treeEntityName static="true" type="SingleLine.Text">si_attribute</treeEntityName>
+              <treeEntityAttribute static="true" type="SingleLine.Text">si_parentattribute</treeEntityAttribute>
+              <nameAttribute static="true" type="SingleLine.Text">si_name</nameAttribute>
+              <idAttribute static="true" type="SingleLine.Text">si_attributeid</idAttribute>
+              <relationshipName static="true" type="SingleLine.Text">si_Service_Service_Attribute</relationshipName>
+              <relationshipEntity static="true" type="SingleLine.Text">si_service_si_attribute</relationshipEntity>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{ce6cbac3-0e60-19ac-1328-6d9d03cc2119}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>si_ServiceStatistic_Service_si_Service</RelationshipName>
+              <TargetEntityType>si_servicestatistic</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>false</EnableViewPicker>
+              <ViewIds>{8A238040-52CD-421A-B177-498D86707EE0},{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>All</ChartGridMode>
+              <VisualizationId />
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>true</EnableChartPicker>
+              <RecordsPerPage>20</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_ServiceStatistic_Service_si_Service</RelationshipName>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{8A238040-52CD-421A-B177-498D86707EE0},{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.Grid.GridControl">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>si_ServiceStatistic_Service_si_Service</RelationshipName>
+                <TargetEntityType>si_servicestatistic</TargetEntityType>
+                <EnableViewPicker>false</EnableViewPicker>
+                <FilteredViewIds>{8A238040-52CD-421A-B177-498D86707EE0},{99C2BCC8-F880-EB11-A812-000D3A09D5C0}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">no</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <ListLayoutDirection static="true" type="Enum">Vertical</ListLayoutDirection>
+              <EnableSubGridAutoCollapse static="true" type="Enum">false</EnableSubGridAutoCollapse>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+              <EnableJumpBar static="true" type="Enum">yes</EnableJumpBar>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Service - Custom" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A custom form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

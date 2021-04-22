@@ -48,7 +48,12 @@
                         <labels>
                           <label description="Service" languagecode="1033" />
                         </labels>
-                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="false" />
+                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="false">
+                          <parameters>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -56,7 +61,27 @@
                         <labels>
                           <label description="Service Standard" languagecode="1033" />
                         </labels>
-                        <control id="si_servicestandard" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicestandard" disabled="false" />
+                        <control id="si_servicestandard" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicestandard" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                            <DisableViewPicker>true</DisableViewPicker>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c7d063d-b345-b731-e951-7674a1636c9e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Attribute" languagecode="1033" />
+                        </labels>
+                        <control id="si_attribute" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_attribute" disabled="false">
+                          <parameters>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{23070271-B377-EB11-A812-0022486D6288}</DefaultViewId>
+                            <AvailableViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73},{80A6694A-1118-4E6A-8601-F243213D7334},{8FFB68E1-88DD-496C-AB4E-C850408E06CB},{74EDFD61-B477-EB11-A812-0022486D66D3},{23070271-B377-EB11-A812-0022486D6288}</AvailableViewIds>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
                       </cell>
                     </row>
                     <row>
@@ -64,41 +89,30 @@
                         <labels>
                           <label description="Fee" languagecode="1033" />
                         </labels>
-                        <control id="si_fee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_fee" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell locklevel="0" id="{047f6102-9921-4430-8fad-189b6bb9c9f4}" rowspan="7" colspan="1" auto="false" showlabel="true">
-                        <labels>
-                          <label description="Attributes" languagecode="1033" />
-                        </labels>
-                        <control id="Subgrid_1" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{c0a261da-d662-2c80-abe2-ce4a3ca43c7e}">
+                        <control id="si_fee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_fee" disabled="false">
                           <parameters>
-                            <TargetEntityType>si_serviceservicestandardfeeattribute</TargetEntityType>
-                            <ViewId>{7B82A60B-11C0-48BB-896B-B07522B9F499}</ViewId>
-                            <ViewIds>{7B82A60B-11C0-48BB-896B-B07522B9F499}</ViewIds>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <RelationshipName>si_ServiceServiceStandardFeeAttribute_si_</RelationshipName>
-                            <RecordsPerPage>4</RecordsPerPage>
-                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
-                            <IsUserView>false</IsUserView>
-                            <EnableQuickFind>false</EnableQuickFind>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <AutoExpand>Fixed</AutoExpand>
-                            <ChartGridMode>All</ChartGridMode>
-                            <VisualizationId />
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>true</EnableChartPicker>
+                            <DisableMru>true</DisableMru>
+                            <DisableViewPicker>true</DisableViewPicker>
                           </parameters>
                         </control>
                       </cell>
                     </row>
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
-                    <row />
+                    <row>
+                      <cell id="{b05290ba-6ab6-4b00-6d94-b86328d02537}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4309932-7038-8c2b-3e6d-a945548cd723}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_enddate" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -181,7 +195,6 @@
       <controlDescriptions />
       <formLibraries>
         <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{3aaddd16-3d21-b6d1-9711-290823559428}" />
-        <Library name="si_scripts/TCServiceStandardFee.js" libraryUniqueId="{b827c5e0-1e00-ece7-332c-82263c468da3}" />
       </formLibraries>
       <events>
         <event name="onsave" application="false" active="false">

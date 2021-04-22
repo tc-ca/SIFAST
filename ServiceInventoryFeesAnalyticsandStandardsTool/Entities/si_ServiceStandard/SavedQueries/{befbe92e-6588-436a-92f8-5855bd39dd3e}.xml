@@ -17,13 +17,22 @@
     </layoutxml>
     <querytype>64</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
         <entity name="si_servicestandard">
           <attribute name="si_servicestandardid" />
           <attribute name="si_nameen" />
           <attribute name="createdon" />
+          <order attribute="si_nameen" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="si_startdate" operator="null" />
+              <condition attribute="si_startdate" operator="olderthan-x-minutes" value="1" />
+            </filter>
+            <filter type="or">
+              <condition attribute="si_enddate" operator="null" />
+              <condition attribute="si_enddate" operator="next-x-years" value="100" />
+            </filter>
           </filter>
         </entity>
       </fetch>

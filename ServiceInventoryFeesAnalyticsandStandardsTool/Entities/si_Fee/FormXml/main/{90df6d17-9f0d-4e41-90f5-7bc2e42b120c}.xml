@@ -200,6 +200,22 @@
                         </control>
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{3ad9aca4-3001-40c1-ad6c-9f4776c812a5}" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="si_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f86b110-f432-4bcd-b81a-2a260d620982}" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="si_enddate" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

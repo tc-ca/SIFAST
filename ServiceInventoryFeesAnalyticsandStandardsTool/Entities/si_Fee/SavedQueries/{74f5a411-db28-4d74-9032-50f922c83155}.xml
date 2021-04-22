@@ -11,20 +11,31 @@
       <grid name="si_fees" jump="si_displaynameen" select="1" icon="1" preview="0">
         <row name="si_fee" id="si_feeid">
           <cell name="si_displaynameen" width="300" />
+          <cell name="si_feecode" width="100" />
           <cell name="createdon" width="125" />
         </row>
       </grid>
     </layoutxml>
     <querytype>64</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
         <entity name="si_fee">
           <attribute name="si_feeid" />
           <attribute name="si_displaynameen" />
           <attribute name="createdon" />
+          <order attribute="si_displaynameen" descending="false" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="si_startdate" operator="null" />
+              <condition attribute="si_startdate" operator="olderthan-x-minutes" value="1" />
+            </filter>
+            <filter type="or">
+              <condition attribute="si_enddate" operator="null" />
+              <condition attribute="si_enddate" operator="next-x-years" value="100" />
+            </filter>
           </filter>
+          <attribute name="si_feecode" />
         </entity>
       </fetch>
     </fetchxml>

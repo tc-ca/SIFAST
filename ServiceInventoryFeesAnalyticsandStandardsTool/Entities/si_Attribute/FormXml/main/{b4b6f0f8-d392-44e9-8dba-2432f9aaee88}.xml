@@ -44,6 +44,30 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{3c2bc69d-40cb-1699-d313-8e5ec30d4c16}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="English Description" languagecode="1033" />
+                        </labels>
+                        <control id="si_englishdescription" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_englishdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a66b1ad-ca25-12ba-bab1-48e36468a746}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="French Description" languagecode="1033" />
+                        </labels>
+                        <control id="si_frenchdescription" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_frenchdescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c57e0b69-1520-15aa-ce87-1ea1679e296d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Attribute" languagecode="1033" />
+                        </labels>
+                        <control id="si_parentattribute" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_parentattribute" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{abad3fe1-b742-4d6c-aeb9-5ac045a4fff6}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
@@ -100,6 +124,36 @@
           </row>
         </rows>
       </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
       <DisplayConditions Order="0" FallbackForm="true">
         <Everyone />
       </DisplayConditions>

@@ -20,13 +20,18 @@
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{d09bfa64-293d-4a5e-93ac-2fbc0659ba92}" locklevel="0" labelid="{0c2bb144-bec3-4f2d-8603-4a10fa04be40}">
+                      <cell id="{d09bfa64-293d-4a5e-93ac-2fbc0659ba92}" locklevel="0" labelid="{0c2bb144-bec3-4f2d-8603-4a10fa04be40}" showlabel="true">
                         <labels>
                           <label description="Service" languagecode="1033" />
                         </labels>
-                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="false">
+                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="true" uniqueid="{e9c84da8-784c-2a59-8524-972798d28990}">
                           <parameters>
                             <DisableMru>true</DisableMru>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{5A34120D-DA0C-4327-95B7-2C265C9050EC}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
                           </parameters>
                         </control>
                       </cell>
@@ -41,7 +46,7 @@
                             <AutoResolve>true</AutoResolve>
                             <DisableMru>true</DisableMru>
                             <DisableQuickFind>true</DisableQuickFind>
-                            <DisableViewPicker>false</DisableViewPicker>
+                            <DisableViewPicker>true</DisableViewPicker>
                             <DefaultViewId>{BEFBE92E-6588-436A-92F8-5855BD39DD3E}</DefaultViewId>
                             <FilterRelationshipName>si_Service_si_ServiceStandard</FilterRelationshipName>
                             <DependentAttributeName>si_serviceservicestandardfee.si_service</DependentAttributeName>
@@ -52,15 +57,58 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{f1c79de4-ba7a-4708-9efe-66020dcfecaa}" locklevel="0" labelid="{041e7856-86dd-4b1c-bf7a-b30d251d667a}">
+                      <cell id="{06348bde-be3e-574e-bb7b-2838353b130a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Attribute" languagecode="1033" />
+                        </labels>
+                        <control id="si_attribute" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_attribute" disabled="false" uniqueid="{4a41516c-a1d2-9752-20a2-0641641bc919}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{23070271-B377-EB11-A812-0022486D6288}</DefaultViewId>
+                            <FilterRelationshipName>si_Service_Service_Attribute</FilterRelationshipName>
+                            <DependentAttributeName>si_serviceservicestandardfee.si_service</DependentAttributeName>
+                            <DependentAttributeType>si_service</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{EE5A1E08-E76E-4A0F-9D92-4734205A9E73},{80A6694A-1118-4E6A-8601-F243213D7334},{8FFB68E1-88DD-496C-AB4E-C850408E06CB},{74EDFD61-B477-EB11-A812-0022486D66D3},{23070271-B377-EB11-A812-0022486D6288}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f1c79de4-ba7a-4708-9efe-66020dcfecaa}" locklevel="0" labelid="{041e7856-86dd-4b1c-bf7a-b30d251d667a}" showlabel="true">
                         <labels>
                           <label description="Fee" languagecode="1033" />
                         </labels>
-                        <control id="si_fee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_fee" disabled="false">
+                        <control id="si_fee" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_fee" disabled="false" uniqueid="{d963742d-333b-1034-74a2-336942aa0899}">
                           <parameters>
                             <DisableMru>true</DisableMru>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DefaultViewId>{06A9BFB5-4B29-4BB8-826D-46363735DE57}</DefaultViewId>
+                            <AvailableViewIds>{06A9BFB5-4B29-4BB8-826D-46363735DE57},{74F5A411-DB28-4D74-9032-50F922C83155}</AvailableViewIds>
+                            <AllowFilterOff>false</AllowFilterOff>
                           </parameters>
                         </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c51eda3-14a1-d7bb-2102-eb7313e613bc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{da8bb62e-de81-bc47-0dd1-e6aa1e564251}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_enddate" disabled="false" />
                       </cell>
                     </row>
                   </rows>
@@ -109,14 +157,8 @@
       <controlDescriptions />
       <formLibraries>
         <Library name="si_lib/dg.xrmquery.web.js" libraryUniqueId="{9a3d90be-8b48-b36e-4523-997198b006b3}" />
-        <Library name="si_scripts/TCServiceStandardFee.js" libraryUniqueId="{74e1d3da-5db6-137b-1ab7-199531e8e0ae}" />
       </formLibraries>
       <events>
-        <event name="onsave" application="false" active="false">
-          <Handlers>
-            <Handler functionName="SIFAST.TCServiceStandardFee.ValidateService" libraryName="si_scripts/TCServiceStandardFee.js" handlerUniqueId="{777320dc-9274-6b2d-3839-c0006eee1d62}" enabled="true" parameters="" passExecutionContext="true" />
-          </Handlers>
-        </event>
         <event name="onchange" application="false" active="false" attribute="si_service">
           <Handlers>
             <Handler functionName="SIFAST.TCServiceStandardFee.ValidateService" libraryName="si_lib/dg.xrmquery.web.js" handlerUniqueId="{63763e17-2cc2-0030-3eb7-beea950d5807}" enabled="true" parameters="" passExecutionContext="true" />

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8a238040-52cd-421a-b177-498d86707ee0}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="si_name" select="1" icon="1" preview="1">
+        <row name="result" id="si_servicestatisticid">
+          <cell name="si_service" width="100" />
+          <cell name="si_periodfrom" width="100" />
+          <cell name="si_periodto" width="100" />
+          <cell name="si_numberofinpersonapplications" width="100" />
+          <cell name="si_numberofapplicationsbymail" width="100" />
+          <cell name="si_numberofonlineapplications" width="100" />
+          <cell name="si_numberofapplicationsbytelephone" width="100" />
+          <cell name="si_numberofwebsitevisits" width="100" />
+          <cell name="si_numberoftelephoneinquires" width="100" />
+          <cell name="si_numberofapplicationsthroughotherchannels" width="100" />
+          <cell name="si_totalannualvolume" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="si_servicestatistic">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="si_periodfrom" />
+          <attribute name="si_periodto" />
+          <attribute name="si_numberofapplicationsbymail" />
+          <attribute name="si_numberofapplicationsthroughotherchannels" />
+          <attribute name="si_numberofapplicationsbytelephone" />
+          <attribute name="si_numberofinpersonapplications" />
+          <attribute name="si_numberoftelephoneinquires" />
+          <attribute name="si_numberofonlineapplications" />
+          <attribute name="si_numberofwebsitevisits" />
+          <attribute name="si_service" />
+          <attribute name="si_totalannualvolume" />
+          <attribute name="si_servicestatisticid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Service Statistics" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

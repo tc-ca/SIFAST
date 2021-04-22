@@ -24,10 +24,18 @@
           <attribute name="si_displaynameen" />
           <attribute name="createdon" />
           <order attribute="si_displaynameen" descending="false" />
+          <attribute name="si_feecode" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="si_startdate" operator="olderthan-x-minutes" value="1" />
+              <condition attribute="si_startdate" operator="null" />
+            </filter>
+            <filter type="or">
+              <condition attribute="si_enddate" operator="null" />
+              <condition attribute="si_enddate" operator="next-x-years" value="100" />
+            </filter>
           </filter>
-          <attribute name="si_feecode" />
         </entity>
       </fetch>
     </fetchxml>

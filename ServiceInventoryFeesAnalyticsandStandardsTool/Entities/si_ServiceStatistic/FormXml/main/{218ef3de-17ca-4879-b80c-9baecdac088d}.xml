@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{218ef3de-17ca-4879-b80c-9baecdac088d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{5ae4f74a-2892-4ee9-8b20-4fd8e7fbb429}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{da55ce3b-aa6c-46b5-9824-c1b3a2d07a39}" name="{da55ce3b-aa6c-46b5-9824-c1b3a2d07a39}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{66c50e73-fca7-42a2-b284-f8551e9988ad}" locklevel="1">
+                        <labels>
+                          <label description="Service Group" languagecode="1033" />
+                        </labels>
+                        <control id="si_servicegroup" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_servicegroup" disabled="true" />
+                      </cell>
+                      <cell id="{2a134b2e-570f-4c8b-b228-c4c8cb737ef9}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a6ab0d77-f798-46b5-a1eb-9ee6d509ec6d}" locklevel="1">
+                        <labels>
+                          <label description="Service" languagecode="1033" />
+                        </labels>
+                        <control id="si_service" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="si_service" disabled="true" />
+                      </cell>
+                      <cell id="{c28bde01-24d9-354c-30d7-5c5bc740cc29}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Applications by Telephone" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsbytelephone" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsbytelephone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{272a18f0-a9be-409b-894d-c67d5d6ab6d3}" locklevel="0">
+                        <labels>
+                          <label description="Period From" languagecode="1033" />
+                        </labels>
+                        <control id="si_periodfrom" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="si_periodfrom" disabled="false" />
+                      </cell>
+                      <cell id="{0bbe3039-6b42-85d4-2dc7-c603c27c0376}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Website Visits" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofwebsitevisits" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofwebsitevisits" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{81cf6264-95ec-4cdc-b323-aef39697e51d}" locklevel="0">
+                        <labels>
+                          <label description="Period To" languagecode="1033" />
+                        </labels>
+                        <control id="si_periodto" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="si_periodto" disabled="false" />
+                      </cell>
+                      <cell id="{6ae59dcb-6053-b941-30a7-5a22e641bd5c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Telephone Inquires" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberoftelephoneinquires" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberoftelephoneinquires" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{18363939-7c34-1c41-d966-962d36bd0e85}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of In-Person Applications" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofinpersonapplications" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofinpersonapplications" disabled="false" />
+                      </cell>
+                      <cell id="{eb0d12ee-0306-4a07-e0cd-3ce15e2b113e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Applications Through Other Channels" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsthroughotherchannels" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsthroughotherchannels" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82bd7100-2097-84a5-eb7e-baee420a562e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Applications by Mail" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofapplicationsbymail" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofapplicationsbymail" disabled="false" />
+                      </cell>
+                      <cell id="{c53273eb-1160-43b1-82e5-89e67053e85d}" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="si_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="si_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{879730ec-3310-1c60-a972-28c36ca823e7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Online Applications" languagecode="1033" />
+                        </labels>
+                        <control id="si_numberofonlineapplications" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="si_numberofonlineapplications" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{74dbdeef-d041-4d52-b803-69b5346b5369}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar />
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <header id="{bb61b8ea-beb3-476d-84fd-be62b7ed6b37}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{50855055-cb7f-487e-9e0d-9c105ee344e4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{65e9cd09-c2bb-4efc-81f3-400a05166c6f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{64edac29-7cef-433e-a6c6-be35169f290a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{686e2589-cfe6-44b6-83a0-821e835b2441}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{28d53201-e947-40e3-ac67-e2e69d2b53f6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{2cfafbf0-498e-4336-8f3b-eae79e6ab087}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b0913fc6-0f7e-49c3-b53e-e3b3e6ccfe1d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

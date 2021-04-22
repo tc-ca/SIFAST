@@ -84,6 +84,22 @@
                       </cell>
                     </row>
                     <row>
+                      <cell id="{8c93096c-6582-4283-66c4-2ed9be864797}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_startdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7b29cae-eba7-6424-50b8-390866218b88}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1033" />
+                        </labels>
+                        <control id="si_enddate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="si_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
                       <cell id="{cd16f1f8-ee48-4f6e-92a7-bf37a8f1e3fc}" showlabel="true" visible="false">
                         <labels>
                           <label description="Owner" languagecode="1033" />

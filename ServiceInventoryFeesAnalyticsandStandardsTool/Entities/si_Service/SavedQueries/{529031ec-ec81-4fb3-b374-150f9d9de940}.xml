@@ -19,17 +19,25 @@
     </layoutxml>
     <querytype>0</querytype>
     <fetchxml>
-      <fetch version="1.0" mapping="logical">
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
         <entity name="si_service">
-          <attribute name="si_serviceid" />
           <attribute name="si_nameen" />
-          <filter type="and">
-            <condition attribute="statecode" operator="eq" value="0" />
-          </filter>
           <attribute name="si_id" />
           <attribute name="si_accesstype" />
           <attribute name="si_businessline" />
           <order attribute="si_id" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <filter type="or">
+              <condition attribute="si_startdate" operator="olderthan-x-minutes" value="1" />
+              <condition attribute="si_startdate" operator="null" />
+            </filter>
+            <filter type="or">
+              <condition attribute="si_enddate" operator="null" />
+              <condition attribute="si_enddate" operator="next-x-years" value="100" />
+            </filter>
+          </filter>
+          <attribute name="si_serviceid" />
         </entity>
       </fetch>
     </fetchxml>
